@@ -1,7 +1,8 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
-<Project Name="Weather Station.lvproj" Type="Project" LVVersion="9008000" URL="Weather Station.lvproj">
+<Project Name="Weather Station.lvproj" Type="Project" LVVersion="13008000" URL="Weather Station.lvproj">
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="CCSymbols" Type="Str">OS,Win;CPU,x86;</Property>
+		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="Weather Station UI.vi" Type="VI" URL="../Weather Station UI.vi"/>
 		<Item Name="Determine Warnings.vi" Type="VI" URL="../Supporting Files/Determine Warnings.vi"/>
