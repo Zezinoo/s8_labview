@@ -1,0 +1,657 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+
+ <TITLE>M Series Additional Documentation  Readme</title>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-1">
+<style>/***************************************************/
+/* MINIMAL STYLES */
+/* The following section defines styles that every HTML Help project should need. */
+
+/* Specifies White Background color */
+body {background-color:#ffffff}
+
+/* The default style of P is red to alert you that you need to apply a style class, such as Body. */
+P { margin-top:6.00pt; margin-bottom:6.00pt; font-family:Verdana; font-size:8pt; color: #000000; }
+
+BR { font-size:4.00pt; }
+
+H1,H2,H3,H4,H5,H6 { color:#000000 }
+
+/* Use H1 for all topic headings. */
+H1 { margin-top:3.00pt; margin-bottom:3.00pt; font-family:Arial; font-size:14pt;   }
+
+/* Use H2 for second-level headings. */
+H2 { margin-top:9.00pt; margin-bottom:3.00pt; font-family:Verdana; font-size:12pt; font-weight:bold;  }
+
+/* Use H3 for third-level headings. */
+H3 { margin-top:6.00pt; margin-bottom:3.00pt; font-family:Verdana; font-size:10pt; font-weight:bold;  }
+
+/* Use H4 for fourth-level headings. */
+H4 { margin-top:3.00pt; margin-bottom:3.00pt; font-family:Verdana; font-size:8pt; font-weight:bold;  }
+
+/* H5 and H6 have the same definition as H4 because you should not need this level of heading in one topic. If you need to use H5 or H6, consider breaking up your topic into more than one topic. */
+H5 { margin-top:3.00pt; margin-bottom:3.00pt; font-family:Verdana; font-size:8pt; font-weight:bold;  }
+H6 { margin-top:3.00pt; margin-bottom:3.00pt; font-family:Verdana; font-size:8pt; font-weight:bold;  }
+
+/* Use the Body style class for normal paragraphs. */
+P.Body { margin-top:6.00pt; margin-bottom:6.00pt; font-family:Verdana; font-size:8pt; color:#000000;  }
+
+/* Use the Anchor style class for graphic references on a line by themselves. */
+P.Anchor { margin-top:6.00pt; margin-bottom:6.00pt; font-family:Verdana; font-size:10pt; color:#000000;  }
+
+/* Use the Indent style classes to indent a paragraph. If you need to indent text below a list item, use <br><br> to start the new paragraph within the same set of <li></li> tags. If you need to indent a list within another list, nest the indented list within the first list's set of <ol></ol> or <ul></ul> tags. */
+P.Indent1 { margin-left:12.00pt; margin-top:6.00pt; margin-bottom:3.00pt; font-family:Verdana; font-size:8pt; color:#000000;  }
+P.Indent2 { margin-left:24.00pt; margin-top:6.00pt; margin-bottom:3.00pt; font-family:Verdana; font-size:8pt; color:#000000;  }
+P.Indent3 { margin-left:36.00pt; margin-top:6.00pt; margin-bottom:3.00pt; font-family:Verdana; font-size:8pt; color:#000000;  }
+
+/* Use the LI style for all list items. */
+LI { margin-top:3.00pt; margin-bottom:3.00pt; font-family:Verdana; font-size:8pt; color:#000000; }
+
+
+
+/* Use the OL style for numbered lists. You do not have to type the number for each list item in a numbered list. */
+OL { margin-left:18.00pt; margin-top:3.00pt; margin-bottom:3.00pt; text-indent:0pt; font-family:Verdana; font-size:8pt; color:#000000; list-style-type: decimal; }
+
+/* Use the OL style for numbered lists. Nested lists will use the bullet types according to the nesting scheme below */
+ol ol {list-style-type:lower-alpha}
+ol ol ol {list-style-type:decimal}
+ol ol ol ol {list-style-type:lower-alpha}
+ol ol ol ol ol {list-style-type:decimal}
+ol ol ol ol ol ol {list-style-type:lower-alpha}
+ol ol ol ol ol ol ol {list-style-type:decimal}
+ol ol ol ol ol ol ol ol {list-style-type:lower-alpha}
+
+
+/* Use the EquationNum style class for numbered lists of equations. You do not have to type the number for each list item in a numbered list. */
+OL.EquationNum { margin-left:36.00pt; margin-top:3.00pt; margin-bottom:3.00pt; text-indent:0pt; font-family:Verdana; font-size:8pt; color:#000000; list-style-type: decimal; }
+
+/* Use the List-abc style class for lettered lists. You do not have to type the letter for each list item in a lettered list. */
+OL.List-abc { margin-left:18.00pt; margin-top:3.00pt; margin-bottom:3.00pt; text-indent:0pt; font-family:Verdana; font-size:8pt; color:#000000; list-style-type:lower-alpha; }
+
+/* Use the UL style for bulleted lists. You do not have to type the bullet for each list item in a bulleted list. */
+UL { margin-left:12.00pt; text-indent:0pt; margin-top:3.00pt; margin-bottom:3.00pt; font-family:Verdana; font-size:8pt; color:#000000; list-style-type: disc; }
+
+/* Use the UL style for bulleted lists. Nested lists will use the bullet types according to the nesting scheme below. NOTE: hyphen.gif required in same directory as minimal.css */
+ul ul {list-style-image:url(hyphen.gif)}
+ul ul ul {list-style-image:none;list-style-type:disc}
+ul ul ul ul {list-style-image:url(hyphen.gif)}
+ul ul ul ul ul {list-style-image:none;list-style-type:disc}
+ul ul ul ul ul ul {list-style-image:url(hyphen.gif)}
+ul ul ul ul ul ul ul {list-style-image:none;list-style-type:disc}
+ul ul ul ul ul ul ul ul ul{list-style-image:url(hyphen.gif)}
+
+/* Use the List-Box style class for bulleted lists with boxes instead of bullets. You do not have to type the box for each list item in a box list. */
+UL.List-Box { margin-left:12.00pt; margin-top:3.00pt; margin-bottom:3.00pt; text-indent:0pt; font-family:Verdana; font-size:8pt; color:#000000; list-style-type: square; }
+
+/* Use the List-Diamond style class for bulleted lists with diamonds instead of bullets. You do not have to type the diamond for each list item in a diamond list. */
+UL.List-Diamond { margin-left:12.00pt; margin-top:3.00pt; margin-bottom:3.00pt; text-indent:0pt; font-family:Verdana; font-size:8pt; color:#000000; list-style-image:url(diamond.gif); }
+
+/* Use the List-Hyphen style class for bulleted lists with hyphens instead of bullets. You do not have to type the hyphen for each list item in a hyphen list. */
+UL.List-Hyphen { margin-left:12.00pt; margin-top:3.00pt; margin-bottom:3.00pt; text-indent:0pt; font-family:Verdana; font-size:8pt; color:#000000; list-style-image:url(hyphen.gif); }
+
+/* Use the Borderless style class for tables that do not need borders, such as for 2-column or 3-column lists with no headings. */
+Table.Borderless { border:none; }
+
+/* Use the Bordered style class for tables that need borders. */
+Table.Bordered { border-width: 1pt; border-style: solid; border-color: #000000; border-collapse: collapse; }
+
+/* Use the Borderless-Wide style class for tables that do not need borders and that you want to stretch to fill the entire topic width. */
+Table.Borderless-Wide { border:none; width:100%; }
+
+/* Use the Bordered-Wide style class for tables that need borders and that you want to stretch to fill the entire topic width. */
+Table.Bordered-Wide { border-width: 1pt; border-style: solid; border-color: #000000; width:100%; border-collapse: collapse; }
+
+/* Use the TD style for table cells in Borderless or Borderless-Wide tables. */
+TD { font-family:Verdana; font-size:8pt; color:#000000; vertical-align:top; padding:3px; }
+
+/* Use the Bordered style class for table cells in Bordered or Bordered-Wide tables. */
+TD.Bordered { font-family:Verdana; font-size:8pt; color:#000000; vertical-align:top; border-width: 1pt; border-style: solid; border-color: #000000; }
+
+/* Use the Icon style class for table cells that contain note, caution, warning, or tip icons, or LabVIEW datatype terminals. */
+TD.Icon { width:40px; vertical-align:top; }
+
+/* Use the Table-cell-8pt style class for table cells in tables that contain a lot of information and need smaller text to fit it all on one screen to prevent a horizontal scroll bar from appearing. */
+TD.Table-cell-8pt { font-family:Verdana; font-size:7pt; color:#000000;  }
+
+/* Use the TH style for table heading cells in Borderless or Borderless-Wide tables. */
+TH { font-family:Verdana; font-size:8pt; color:#000000; font-weight:bold; padding:3px; }
+
+/* Use the Bordered style class for table heading cells in Bordered or Bordered-Wide tables. */
+TH.Bordered { font-family:Verdana; font-size:8pt; color:#000000; font-weight:bold;  border-width: 1pt; border-style: solid; border-color: #000000; }
+
+/* Use the Table-cell-8pt style class for table heading cells in tables that contain a lot of information and need smaller text to fit it all on one screen to prevent a horizontal scroll bar from appearing. */
+TH.Table-Head-8pt { font-family:Verdana; font-size:7pt; color:#000000; font-weight:bold; }
+
+/* Use the Left-Align style class for table heading cells that you want to left align instead of center align. */
+TH.Left-Align { font-family:Verdana; font-size:8pt; color:#000000; font-weight:bold; padding:3px; text-align:left; }
+
+/***************************************************/
+/* CHARACTER FORMATS */
+/* The following section defines character formats that every HTML Help project should need. */
+
+/* Use the Dark-Red format for warnings or cautions. */
+#Dark-Red { color: #800000 }
+
+/* Use the Monospace format for code or syntax examples. */
+#Monospace { font-family: Courier New; font-size: 8pt; }
+
+/* Use the Monospace-Bold format for messages and responses that the computer automatically prints to the screen. */
+#Monospace-Bold { font-family: Courier New; font-size: 8pt; font-weight: bold; }
+
+/* Use the Monospace-Italic format to denote text that is a placeholder for a word or value that the user must supply. */
+#Monospace-Italic { font-family: Courier New; font-size: 8pt; font-style: italic; }
+
+/* Use the Platform format to denote a specific platform. */
+#Platform { color: #0000FF; font-weight: bold; }
+
+/* Use the Symbol format for characters not in the Verdana character set. Use this format sparingly. When possible, you should use the correct ASCII code for the symbol or use a graphic to recreate the symbol. */
+#Symbol { font-family: Symbol; font-size: 8pt; }
+
+/* CHARACTER FORMATS Updated to conform with the CSE HTML Validator Pro */
+/* The following section defines character formats that every HTML Help project should need. */
+
+/* Use the Dark-Red format for warnings or cautions. */
+.Dark-Red { color: #800000 }
+
+/* Use the Monospace format for code or syntax examples. */
+.Monospace { font-family: Courier New; font-size: 8pt; }
+
+/* Use the Monospace-Bold format for messages and responses that the computer automatically prints to the screen. */
+.Monospace-Bold { font-family: Courier New; font-size: 8pt; font-weight: bold; }
+
+/* Use the Monospace-Italic format to denote text that is a placeholder for a word or value that the user must supply. */
+.Monospace-Italic { font-family: Courier New; font-size: 8pt; font-style: italic; }
+
+/* Use the Platform format to denote a specific platform. */
+.Platform { color: #0000FF; font-weight: bold; }
+
+/* Use the Symbol format for characters not in the Verdana character set. Use this format sparingly. When possible, you should use the correct ASCII code for the symbol or use a graphic to recreate the symbol. */
+.Symbol { font-family: Symbol; font-size: 8pt; }
+
+/* Use the Red-text format to call attention to text that needs  information added or edited by techcomm */
+.Red-text {color: #FF0000;}
+
+/* Use the Green-Underline format for the green defintion in the conventions topic */
+.Green-Underline {color: #007700;	text-decoration : underline;}
+
+/* Use the glossButton format for the glossary buttons used in the glossary topic */
+.glossButton { font-family:Verdana; font-size:12px; color:black; }
+
+
+
+/* The following styles define the color of links. */
+a:link { color: #007700 }
+a:hover { color: #FF0000 }
+a:active { color: #FF0000 }
+a:visited { color: #7F007F }
+
+/***************************************************/
+/* ACTIVITY STYLES */
+/* The following section defines styles that only tutorial-style HTML Help projects should need. */
+
+/* Use the Activity-Objective style class for the objective at the beginning of an activity topic. */
+H3.Activity-Objective { color: #800000; }
+
+<style>/***************************************************/
+/* CODE STYLES */
+/* The following section defines styles that you need to format entire sections of code or syntax examples. If you have just a few words you need to format as a code or syntax example, use the Monospace character format. */
+
+P.Code { margin-top:3.00pt; margin-bottom:0.00pt; font-family:Courier New; font-size:8pt; color:#000000;  }
+P.Code1 { margin-left:12.00pt; margin-top:3.00pt; margin-bottom:0.00pt; font-family:Courier New; font-size:8pt; color:#000000;  }
+P.Code2 { margin-left:24.00pt; margin-top:3.00pt; margin-bottom:0.00pt; font-family:Courier New; font-size:8pt; color:#000000;  }
+P.Code3 { margin-left:36.00pt; margin-top:3.00pt; margin-bottom:0.00pt; font-family:Courier New; font-size:8pt; color:#000000;  }
+
+/***************************************************/
+/* FUNCTION STYLES */
+/* The following section defines styles that you might need to format function reference help. */
+
+P.F-VI-Code4 { margin-left:48.00pt; margin-top:3.00pt; margin-bottom:0.00pt; font-family:Courier New; font-size:8pt; color:#000000;  }
+P.F-VI-Code5 { margin-left:60.00pt; margin-top:3.00pt; margin-bottom:0.00pt; font-family:Courier New; font-size:8pt; color:#000000;  }
+P.F-VI-Equation { margin-top:9.00pt; margin-bottom:9.00pt; font-family:Verdana; font-size:8pt; color:#000000;  }
+
+OL.F-VI-EquationNum { margin-top:3.00pt; margin-bottom:3.00pt; text-indent:0pt; font-family:Verdana; font-size:8pt; color:#000000; list-style-type: decimal; }
+</style>
+</head>
+
+<body bgcolor="#FFFFFF">
+<h1>M Series Additional Documentation Readme</h1>
+
+<p class="Body">This readme provides an overview of the files included on the M Series Additional Documentation for NI-DAQ 7.3 CD. It also provides <a href="#docAdditions">supplemental documentation</a> to help you program an M Series device with NI-DAQmx.</p>
+
+<h2>CD Contents</h2>
+
+<p class="Body">The M Series Additional Documentation for NI-DAQ 7.3 CD contains the following: </p>
+
+<ul>
+
+<li>M Series Documentation&#0151;Keep the following documents in the same directory so that all links work:</li> </ul>
+
+
+<p class="Indent2">M Series Help&#0151;This help file explains the features and components common to all M Series devices. It includes pinouts for supported M Series devices and specifications.</p>
+
+<p class="Indent2">Specifications&#0151;These documents provide detailed specifications for NI 622<em>x</em> and NI 625<em>x</em> devices. Specifications for NI 628<em>x</em> devices are available at <a href="http://ni.com/manuals">ni.com/manuals</a>.</p>
+
+<p class="Indent2">Supported Properties/Attributes&#0151;This file contains the all the supported M Series properties/attributes broken down by device.</p>
+
+
+
+
+<ul><li><span class="Monospace">.bin3</span> Example Files&#0151;These files contain updates for the NI Example Finder needed for M Series devices to be displayed. To view updated devices in the NI Example Finder, replace the existing <span class="Monospace">.bin3</span> file with the appropriate <span class="Monospace">.bin3</span> file on the CD as follows:</ul> 
+
+<p class="Indent2">For LabVIEW 7.0, replace the existing <span class="Monospace">.bin3</span> file, which is installed by default at <span class="Monospace">National Instruments\Shared\Example Finder\1.0\Products\LabVIEW\7.0\exbins\english\platform\daqmxw.bin3</span>, with the <span class="Monospace">.bin3</span> file of the same name on the CD. </p>
+
+<p class="Indent2">For LabVIEW 7.1, replace the existing <span class="Monospace">daqmxw.bin3</span> and <span class="Monospace">daq72mxw.bin3</span> files, which are installed by default at <span class="Monospace">National Instruments\Shared\Example Finder\1.0\Products\LabVIEW\7.1\exbins\english\platform</span>, with  the <span class="Monospace">.bin3</span> files of the same name on the CD.</p>
+
+<p class="Indent2">For LabWindows/CVI 7.0, replace the existing <span class="Monospace">cvidaqmxw.bin3</span> file, which is installed by default at <span class="Monospace">National Instruments\Shared\Example Finder\1.0\Products\CVI\7.0\exbins\english\platform</span>, with the <span class="Monospace">.bin3</span> file of the same name on the CD. </p>
+
+
+</li>
+
+</ul>
+<a name="docAdditions"></a><h2>Supplemental Information for NI-DAQ 7.3 Documentation</h2>
+
+<p class="Body">This section is intended to supplement the NI-DAQ documentation that shipped with your M Series device. The following sections detail these additions.</p>
+
+<ul><li><a href="#devSupport">Supported M Series Devices in NI-DAQ 7.3</a></li>
+<li><a href="#devConsid">Device Considerations for M Series</a></li>
+<li><a href="#cal">API Changes for M Series</a></li>
+<li><a href="#knownIssues">Known Issue</a></li>
+</ul>
+
+<p class="Body">For more on documentation available with NI-DAQ, refer to <em>Information about Measurement Applications and Devices</em> in the <em>DAQ Quick Start Guide</em>. If you do not have a printed copy of this guide, NI-DAQ installs a PDF version of it at <strong>Start&raquo;Programs&raquo;National Instruments&raquo;NI-DAQ&raquo;DAQ Quick Start Guide</strong>.</p>
+
+<a name="devSupport"></a><h2>Supported M Series Devices in NI-DAQ 7.3</h2>
+
+<p class="Body">The following devices are supported only in NI-DAQmx: NI 6220, NI 6221, NI 6224, NI 6229, NI 6250, NI 6251, NI 6254,  NI 6259, NI 6280, NI 6281, NI 6284, and NI 6289. The devices listed in the <em>NI-DAQ 7.3 Readme </em>and the <em>DAQ Quick Start Guide</em> are also supported in NI-DAQ 7.3. </p>
+
+<a name="devConsid"></a><h2>Device Considerations for M Series</h2>
+
+<ul><li><a href="#analogTrig">M Series Valid Sources for the Analog Trigger</a></li>
+<li><a href="#phyChan">M Series Physical Channels</a></li>
+<li><a href="#sigCon">M Series Signal Connections for Counters</a></li>
+<li><a href="#interChan">M Series Internal Channels</a></li>
+<li><a href="#extRef">M Series External Reference Sources</a></li>
+<li><a href="#defaultIO">M Series Default Input/Output Terminal Configurations</a></li>
+<li><a href="#MSCalibration">M Series Calibration</a></li>
+<li><a href="#calSigCon">M Series Calibration Signal Connections</a></li>
+<li><a href="#events">Events</a></li>
+<li><a href="#posEncod">Position Measurements with an Encoder</a></li>
+<li><a href="#devTerm">M Series Device Terminals</a></li>
+<li><a href="#dupCount">Duplicate Count Prevention</a></li>
+
+
+
+</ul>
+
+
+<a name="analogTrig"></a><h3>M Series Valid Sources for the Analog Trigger</h3>
+<h4>APFI 0 and APFI 1</h4>
+<p class="Body"><red>When configuring an analog trigger, connect your analog signal to either the APFI 0 or APFI 1 terminal and specify APFI 0 or APFI 1 as your trigger source.</red></p>
+
+<red><h4>Analog Input Channel</h4></red>
+<p class="Body"><red>In addition to APFI 0 and APFI 1, analog input tasks can  trigger off of one of the analog input channels being sampled.  Because <span class="nobreak">M Series</span> devices use a scanning architecture, many restrictions are placed on how you can use an analog trigger when the source is one of the channels you are sampling.  When you use an Analog Start Trigger, the trigger channel must be the first channel in the channel list.  When you use an Analog Reference or Pause Trigger, and the analog channel is the source of the trigger, there can  be only one channel in the channel list. If you have more than one channel for Pause or Reference Triggers, you must use APFI 0 or APFI 1. </red></p>
+
+<a name="phyChan"></a><h3>M Series Physical Channels</h3>
+<p class="Body"><span class="Monospace">Dev1</span> in physical channel names is the default device name for <span class="nobreak">M Series</span> devices. You can change these names in MAX. </p>
+
+<h4>Analog Input</h4>
+
+<p class="Body">A 16-channel <span class="nobreak">M Series</span> device has physical channels ranging from <span class="Monospace">Dev1/ai0</span> to <span class="Monospace">Dev1/ai15</span>. You can configure only channels 0 through 7 in differential mode. When you configure a channel in differential mode, the channel is  the positive input and channel plus eight is the negative input. For instance, if you configure channel 1 in differential mode, the positive input is channel 1, and channel 9 is the negative input. </p>
+
+<p class="Body">A 32-channel <span class="nobreak">M Series</span> device has physical channels ranging from <span class="Monospace">Dev1/ai0</span> to <span class="Monospace">Dev1/ai31</span>. You can configure channels 0-7 and 16-23 as the positive channel of a differential pair. If <em>N</em> is this channel,  channel <em>N</em> + 8 is the negative input of the pair. </p>
+
+<p class="Body">Use only the physical channel name of the positive channel (not both) when creating a differential channel. </p>
+
+
+
+<h4>Analog Output</h4>
+
+<p class="Body">An <span class="nobreak">M Series</span> device that supports two analog outputs has analog output physical channels named <span class="Monospace">Dev1/ao0</span> and <span class="Monospace">Dev1/ao1</span>. 
+
+<p class="Body">An <span class="nobreak">M Series</span> device that supports four analog outputs has analog output physical channels named <span class="Monospace">Dev1/ao0</span>, <span class="Monospace">Dev1/ao1</span>, <span class="Monospace">Dev1/ao2</span>, and <span class="Monospace">Dev1/ao3</span>.</p>
+
+
+<h4>Digital Input and Output</h4>
+
+<p class="Body">All <span class="nobreak">M Series</span> devices have eight or 32 lines of digital input and output named <span class="Monospace">Dev1/port0/line0</span> through <span class="Monospace">Dev1/port0/line7</span> or <span class="Monospace">Dev1/port0/line0</span> through <span class="Monospace">Dev1/port0/line31</span>. These lines belong to a single port, and the physical channel <span class="Monospace">Dev1/port0</span> refers to all eight or 32 lines at once. Port 0 can perform both hardware-timed and static digital operations.</p>
+
+<p class="Body">M Series devices have two more ports, port 1 and port 2. Port 1 has eight digital I/O lines, <span class="Monospace">Dev1/port1/line0</span> through <span class="Monospace">Dev1/port1/line7</span>. Port 2 has eight digital I/O lines, <span class="Monospace">Dev1/port2/line0</span> through <span class="Monospace">Dev1/port2/line7</span>. Port 1 and port 2 can be used as static digital I/O lines or PFI lines, PFI <0..15>.  When any of PFI lines <0..15> is used as a digital I/O signal, it uses the physical channel name shown in the following table. </p>
+
+<table class="Bordered">
+<th class="Bordered">
+
+PFI Signal</th>
+
+
+<th class="Bordered">Physical Channel Name</th>
+
+
+
+<tr>
+<td class="Bordered">
+PFI 0
+</td>
+<td class="Bordered">
+<span class="Monospace">Dev1/port1/line0</span>
+</td>
+</tr>
+
+<tr>
+<td class="Bordered">PFI 1</td>
+<td class="Bordered"><span class="Monospace">Dev1/port1/line1</span></td>
+
+</tr>
+
+<tr>
+<td class="Bordered">PFI 2</td>
+<td class="Bordered"><span class="Monospace">Dev1/port1/line2</span></td>
+
+</tr>
+
+<tr>
+<td class="Bordered">PFI 3</td>
+<td class="Bordered"><span class="Monospace">Dev1/port1/line3</span></td>
+</tr>
+
+<tr>
+<td class="Bordered">PFI 4</td>
+<td class="Bordered"><span class="Monospace">Dev1/port1/line4</span></td>
+</tr>
+
+<tr>
+<td class="Bordered">PFI 5</td>
+<td class="Bordered"><span class="Monospace">Dev1/port1/line5</span></td>
+</tr>
+
+<tr>
+<td class="Bordered">PFI 6</td>
+<td class="Bordered"><span class="Monospace">Dev1/port1/line6</span></td>
+</tr>
+
+
+<tr>
+<td class="Bordered">PFI 7</td>
+<td class="Bordered"><span class="Monospace">Dev1/port1/line7</span></td>
+</tr>
+
+
+<tr>
+<td class="Bordered">PFI 8</td>
+<td class="Bordered"><span class="Monospace">Dev1/port2/line0</span></td>
+</tr>
+
+<tr>
+<td class="Bordered">PFI 9</td>
+<td class="Bordered"><span class="Monospace">Dev1/port2/line1</span></td>
+</tr>
+
+<tr>
+<td class="Bordered">PFI 10</td>
+<td class="Bordered"><span class="Monospace">Dev1/port2/line2</span></td>
+</tr>
+
+<tr>
+<td class="Bordered">PFI 11</td>
+<td class="Bordered"><span class="Monospace">Dev1/port2/line3</span></td>
+</tr>
+
+<tr>
+<td class="Bordered">PFI 12</td>
+<td class="Bordered"><span class="Monospace">Dev1/port2/line4</span></td>
+</tr>
+
+<tr>
+<td class="Bordered">PFI 13</td>
+<td class="Bordered"><span class="Monospace">Dev1/port2/line5</span></td>
+</tr>
+
+<tr>
+<td class="Bordered">PFI 14</td>
+<td class="Bordered"><span class="Monospace">Dev1/port2/line6</span></td>
+</tr>
+
+<tr>
+<td class="Bordered">PFI 15</td>
+<td class="Bordered"><span class="Monospace">Dev1/port2/line7</span></td>
+</tr>
+</table>
+
+<p class="Body">Physical channel <span class="Monospace">Dev1/port1</span> refers to all eight lines, <span class="Monospace">Dev1/port1/line0:7</span>, at once. Physical channel <span class="Monospace">Dev1/port2</span> refers to all eight lines, <span class="Monospace">Dev1/port2/line0:7</span>, at once.</p>
+
+
+<h4>Counter Input and Output</h4>
+
+<p class="Body">All <span class="nobreak">M Series</span> devices have two counter/timers referred to by the physical channel names <span class="Monospace">Dev1/ctr0</span> and <span class="Monospace">Dev1/ctr1</span>. Unlike the other I/O types, these physical channel names do not refer to terminals on the I/O connector but instead to circuits within the device. There are four primary terminals associated with each counter. These are the terminals used as the SOURCE, GATE, AUX, and OUT functions. <span class="nobreak">NI-DAQmx</span> has default values for these terminals. For counter input tasks, if you know whether your signal provides the SOURCE, AUX, or GATE function and wire your signal to the default, you do not have to set the <strong>Input Terminal</strong> attribute/property. </p>
+<table class="Bordered">
+
+<tr>
+<th class="Bordered">Counter	</th><th class="Bordered">SOURCE Default</th>	<th class="Bordered">GATE Default</th>	<th class="Bordered">AUX Default</th> <th class="Bordered">OUT Default</th>
+</tr>
+
+<tr>
+<td class="Bordered">Dev1/ctr0 </td><td class="Bordered">PFI 8	</td><td class="Bordered">PFI 9</td>	<td class="Bordered">PFI 10</td> <td class="Bordered">PFI 12</td>
+</tr>
+
+<tr>
+<td class="Bordered">Dev1/ctr1</td>	<td class="Bordered">PFI 3</td>	<td class="Bordered">PFI 4</td>	<td class="Bordered">PFI 11</td> <td class="Bordered">PFI 13</td>
+
+</tr>
+
+</table>
+
+<p class="Body">Refer to <a href="#sigCon">M Series Signal Connections for Counters</a> for more information.</p>
+
+<a name="sigCon"></a><h3>M Series Signal Connections for Counters</h3>
+
+<p class="Body">The following table lists the default input terminals for various counter measurements. You can use a different PFI line for any of the input terminals. To change the PFI input for a measurement, use the DAQmx channel properties.</p>
+<table class="Bordered">
+<tr>
+<th class="Bordered">Measurement</th>
+<th class="Bordered">Ctr0</th>
+<th class="Bordered">Ctr1</th>
+</tr>
+<tr>
+<td class="Bordered">Count Edges</td>
+
+<td class="Bordered">Edges: <span class="nobreak">PFI 8</span><br>Count Direction: PFI 10</td>
+<td class="Bordered">Edges: <span class="nobreak">PFI 3</span><br>Count Direction: PFI 11</td>
+</tr>
+
+<tr>
+<td class="Bordered">Pulse Width Measurement</td>
+<td class="Bordered">PFI 9</td>
+<td class="Bordered">PFI 4</td>
+</tr>
+
+<tr>
+<td class="Bordered">Period/Frequency Measurement (Low Frequency with One Counter)</td>
+<td class="Bordered">PFI 9</td>
+<td class="Bordered">PFI 4</td>
+
+</tr>
+<tr><td class="Bordered">Period/Frequency Measurement (High Frequency with Two Counters)</td>
+<td class="Bordered">PFI 8</td>
+<td class="Bordered">PFI 3</td>
+
+</tr>	
+	<tr><td class="Bordered">Period/Frequency Measurement (Large Range with Two Counters)</td>
+<td class="Bordered">PFI 8</td>
+<td class="Bordered">PFI 3</td>
+
+	</tr>
+	<tr>
+	
+	<td class="Bordered">Semiperiod Measurement	</td>
+<td class="Bordered">PFI 9</td>
+<td class="Bordered">PFI 4</td>
+
+	</tr>
+	
+		<tr>
+	
+	<td class="Bordered">Two-Edge Separation Measurement</td>
+<td class="Bordered">Start: <span class="nobreak">PFI 10</span><br>Stop: <span class="nobreak">PFI 9</span></td>
+<td class="Bordered">Start: <span class="nobreak">PFI 11</span><br>Stop: <span class="nobreak">PFI 4</span></td>
+	</tr>
+	
+			<tr>
+	
+	<td class="Bordered">Position Measurement</td>
+<td class="Bordered">A: <span class="nobreak">PFI 8</span><br>B: <span class="nobreak">PFI 10</span><br> Z: <span class="nobreak">PFI 9</span></td>
+<td class="Bordered">A: <span class="nobreak">PFI 3</span><br>B: <span class="nobreak">PFI 11</span><br>Z: <span class="nobreak">PFI 4</span></td>
+</tr>
+	
+</table>
+
+
+<p class="Body">The following table lists the output terminals for counter output. You can use a different PFI line for any of the output terminals.</p>
+
+
+<table class="Bordered">
+<tr>
+<th class="Bordered">Ctr0</th>
+<th class="Bordered">Ctr1</th>
+
+</tr>
+<tr>
+<td class="Bordered">PFI 12</td>
+<td class="Bordered">PFI 13</td>
+
+	</tr></table>
+
+
+<a name="interChan"></a><h3>M Series Internal Channels</h3>
+
+<p class="Body">The following table describes all M Series internal channels.</p>
+
+<table class="Bordered"><tr><th class="Bordered">Internal Channel Name</th>	<th class="Bordered">Description</th></tr>
+<tr><td class="Bordered"><span class="Monospace">_aignd_vs_aignd</span>	</td><td class="Bordered">A differential terminal with the positive and negative terminals both connected to the ground reference for analog input.</td></tr>
+
+<tr><td class="Bordered"><span class="Monospace">_ao0_vs_aognd</span></td> 	<td class="Bordered">A differential terminal with the positive terminal connected to physical channel <span class="Monospace">ao0</span> and the negative terminal connected to the ground reference for analog output.</td></tr>
+
+<tr><td class="Bordered"><span class="Monospace">_ao1_vs_aognd</span></td>	<td class="Bordered">A differential terminal with the positive terminal connected to physical channel <span class="Monospace">ao1</span> and the negative terminal connected to the ground reference for analog output.</td></tr>
+
+<tr><td class="Bordered"><span class="Monospace">_ao2_vs_aognd</span></td>	<td class="Bordered">A differential terminal with the positive terminal connected to physical channel <span class="Monospace">ao2</span> and the negative terminal connected to the ground reference for analog output.</td></tr>
+
+<tr><td class="Bordered"><span class="Monospace">_ao3_vs_aognd</span></td>	<td class="Bordered">A differential terminal with the positive terminal connected to physical channel <span class="Monospace">ao3</span> and the negative terminal connected to the ground reference for analog output.</td></tr>
+
+
+<tr><td class="Bordered"><span class="Monospace">_calref_vs_aignd</span></td>	<td class="Bordered">A differential terminal with the positive terminal connected to the internal calibration reference voltage and the negative terminal connected to the ground reference for analog input.</td></tr>
+
+<tr><td class="Bordered"><span class="Monospace">_aignd_vs_aisense</span></td>	<td class="Bordered">A differential terminal with the positive terminal connected to the ground reference for analog input and the negative terminal connected to  physical channel <span class="Monospace">AI SENSE</span>.</td></tr>
+
+<tr><td class="Bordered"><span class="Monospace">_aignd_vs_aisense2</span></td>	<td class="Bordered">A differential terminal with the positive terminal connected to the ground reference for analog input and the negative terminal connected to physical channel <span class="Monospace">AI SENSE2</span>.</td></tr>
+
+
+<tr><td class="Bordered"><span class="Monospace">_calSrcHi_vs_aignd</span></td><td class="Bordered">A differential terminal with the positive terminal connected to the calibration PWM and the negative terminal connected to the ground reference for analog input.</td></tr>
+
+<tr><td class="Bordered"><span class="Monospace">_calref_vs_calSrcHi</span></td><td class="Bordered">A differential terminal with the positive terminal connected to the internal calibration reference voltage and the negative terminal connected to the calibration PWM.</td></tr>
+
+<tr><td class="Bordered"><span class="Monospace">_calSrcHi_vs_calSrcHi</span></td><td class="Bordered">A differential terminal with the positive and negative terminals connected to the  calibration PWM.</td></tr>
+
+
+<tr><td class="Bordered"><span class="Monospace">_aignd_vs_calSrcHi</span></td><td class="Bordered">A differential terminal with the positive terminal connected to the ground reference for analog input and the negative terminal connected to the calibration PWM.</td></tr>
+
+
+<tr><td class="Bordered"><span class="Monospace">_calSrcMid_vs_aignd</span></td><td class="Bordered">A differential terminal with the positive terminal connected to the calibration PWM and the negative terminal connected to the ground reference for analog input.  <span class="Monospace">_calSrcMid</span> is the divided down version of <span class="Monospace">_calSrcHi</span>.</td></tr>
+
+
+<tr><td class="Bordered"><span class="Monospace">_calSrcLo_vs_aignd</span></td><td class="Bordered">A differential terminal with the positive terminal connected to the calibration PWM and the negative terminal connected to the ground reference for analog input. <span class="Monospace">_calSrcLo</span> is the divided down version of <span class="Monospace">_calSrcHi</span>.</td></tr>
+
+<tr><td class="Bordered"><span class="Monospace">_ai0_vs_calSrcHi</span></td><td class="Bordered">A differential terminal with the positive terminal connected to physical channel <span class="Monospace">ai0</span> and the negative terminal connected to the calibration PWM.</td></tr>
+
+<tr><td class="Bordered"><span class="Monospace">_ai8_vs_calSrcHi</span></td><td class="Bordered">A differential terminal with the positive terminal connected to physical channel <span class="Monospace">ai8</span> and the negative terminal connected to the calibration PWM.</td></tr>
+
+
+</table>
+
+
+<a name="extRef"></a><h3>M Series AO External Reference Sources</h3>
+<p class="Body">For some M Series devices, you can use <span class="Monospace">APFI 0</span> or <span class="Monospace">APFI 1</span> for AO external reference sources. Refer to the specifications for your device for additional information. </p> 
+ 
+<a name="defaultIO"></a><h3>M Series Default Input/Output Terminal Configurations</h3>
+
+<p class="Body">The default terminal configuration is differential for channels 0 through 7 and 16 through 23. The default is referenced single-ended for channels 8 through 15 and 24 through 31. </p> 
+
+<p class="Body">The default output terminal configuration is referenced single-ended. </p>
+
+<a name="MSCalibration"></a><h3>M Series Calibration</h3>
+<p class="Body">Your device uses software calibration to adjust the software scaling of signals read from and produced by your device. Using calibration PWMs with a reference voltage, your device measures and calculates scaling constants for analog input and analog output. The scaling constants are stored in nonvolatile memory (EEPROM) on your device. To achieve specification accuracy, you should self-calibrate your device just before a measurement session but after your computer and the device have been powered on and warmed up for at least 15 minutes. You should allow this same warm-up time before performing any calibration of your system. Frequent calibration produces the most stable and repeatable measurement performance. The device is not harmed in any way if you recalibrate it often.</p>
+
+
+<p class="Body">Calibrating your device takes some time. Do not be alarmed if the DAQmx Self-Calibrate or DAQmx Adjust M Series Calibration function/VI takes several seconds to execute.</p>
+
+
+<p class="Body">For best results, stop any ongoing tasks and disconnect any unnecessary external connections before running calibration.</p>
+
+ 
+<a name="calSigCon"></a><h3>M Series Calibration Signal Connections</h3>
+<h4>Self-Calibration</h4>
+<p class="Body">When you self-calibrate your M Series device, no signal connections are necessary. However, values generated on the analog output channels change during the calibration process. If you have external circuitry connected to the analog output channels and you do not want changes on these channels, you should disconnect the circuitry before beginning the self-calibration. </p>
+<h4>External Calibration</h4>
+<p class="Body">When externally calibrating your M Series device, make the signal connections described for the type of M Series device you are calibrating. Set the reference voltage between +6.000 V and +8.5 V. Typically, you use a calibrator or other stable voltage source for the reference voltage. Do not use a power supply as its signals are not very stable.</p>
+
+<p class="Body">Follow these steps for M Series devices. Refer to <em>Connecting Analog Input Signals</em> in the <em>NI-DAQmx Help</em> for more on connecting signals: </p>
+<ol><li>Disconnect any external connections or circuitry to your M Series device.</li>
+<li>Connect the positive output of your reference voltage source to physical channel ai0. </li>
+<li>Connect the negative output of your reference voltage source to physical channel ai8.</li> 
+<li>If your reference voltage source and your computer are floating with respect to each other, connect the negative output of your reference voltage source to the AI GND terminal as well as to physical channel ai8.</li>
+<li>Run the external calibrate VI.</li></ol>
+
+
+
+
+
+
+
+
+
+<a name="events"></a><h3>Events</h3>
+
+
+<p class="Body">The AI Hold Complete Event is supported on M Series devices. This event is a signal emitted by an E Series or M Series analog input circuit when the analog signal at the physical channel being measured has been latched or held. The  AI Hold Complete Event signals an external multiplexer to switch to the next channel. This signal was previously known as SCANCLK, which is the legacy name of the external terminal where this signal can be emitted.</p>
+
+<p class="Body">Refer to <em>Events</em> in the <em>NI-DAQmx Help</em> for other supported events.</p> 
+ 
+
+<a name="posEncod"></a><h3>Position Measurements with an Encoder</h3>
+
+<p class="Body">With an M Series device, you can measure position with an encoder, such as a  two-pulse encoder or quadrature encoder. M Series devices support three types of decoding for quadrature encoders: X1, X2, and X4. M Series devices also support the Z index, which provides a precise reference point and is available on some encoders. In addition to encoders, you  can use an LVDT or an RVDT to measure position, with appropriate signal conditioning circuitry, such as an SCXI-1540 module.   For additional information on  position measurements, refer to <em>Measuring Position</em> in the <em>NI-DAQmx Help</em>. </p>
+
+
+<a name="devTerm"></a><h3>M Series Device Terminals</h3>
+
+<p class="Body">M Series devices are not currently included in the <em>NI-DAQmx Help</em>, nor in the <em>Measurement &amp; Automation Explorer Help for NI-DAQmx</em>. Refer to the <em>M Series Help</em>, included on this CD, for pinouts. </p>
+
+<a name="dupCount"></a><h3>Duplicate Count Prevention</h3>
+
+<p class="Body">M Series devices support duplicate count prevention, a way to prevent incorrect duplicate counts caused by a timebase being slower than the signal you want to measure. Refer to <em>Duplicate Count Prevention</em> in the <em>NI-DAQmx Help</em> for additional information.</p> 
+
+
+
+<a name="cal"></a><a name="apitop"></a><h2>API Changes for M Series</h2>
+
+<p class="Body">A new calibration function/VI has been added to NI-DAQ 7.3 for M Series devices. M Series devices also support some new properties/attributes. Refer to <a href="supportedProperties.html">Suppported Properties/Attributes for M Series Devices</a> for a complete list. </p>
+
+
+
+
+<a name="calVI"></a><h3>Calibration Function/VI for M Series</h3>
+
+<p class="Body">To adjust the external calibration constants for an M Series device, use the DAQmx Adjust M-Series Calibration function/VI. To adjust constants, you must connect a known voltage to the device and specify that voltage with reference voltage. Refer to the help for DAQmx Adjust E-Series Calibration in the <em>LabVIEW Help</em> or in the <em>NI-DAQmx C Function Reference Help</em> for the specific parameters you set. </p>
+
+<p class="Body">In LabVIEW, you can find DAQmx Adjust M-Series Calibration VI by opening the LabVIEW directory (for instance, <span class="Monospace">Program Files\National Instruments\LabVIEW 7.0</span>) and going to <span class="Monospace">vi.lib\calibration\calibrationInfo.llb</span>. Select <strong>DAQmx Adjust M-Series Calibration</strong>.</p> 
+
+
+<a name="knownIssues"></a><h2>Known Issue</h2>
+
+<p class="Body">If you are using an SCXI-1349 adapter with an M Series device, you need revision B of the SCXI-1349 for parallel mode to work. </p>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,2432 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+
+ <TITLE>Suppported Properties/Attributes for M Series Devices</title>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-1">
+<style>/***************************************************/
+/* MINIMAL STYLES */
+/* The following section defines styles that every HTML Help project should need. */
+
+/* Specifies White Background color */
+body {background-color:#ffffff}
+
+/* The default style of P is red to alert you that you need to apply a style class, such as Body. */
+P { margin-top:6.00pt; margin-bottom:6.00pt; font-family:Verdana; font-size:8pt; color: #000000; }
+
+BR { font-size:4.00pt; }
+
+H1,H2,H3,H4,H5,H6 { color:#000000 }
+
+/* Use H1 for all topic headings. */
+H1 { margin-top:3.00pt; margin-bottom:3.00pt; font-family:Arial; font-size:14pt;   }
+
+/* Use H2 for second-level headings. */
+H2 { margin-top:9.00pt; margin-bottom:3.00pt; font-family:Verdana; font-size:12pt; font-weight:bold;  }
+
+/* Use H3 for third-level headings. */
+H3 { margin-top:6.00pt; margin-bottom:3.00pt; font-family:Verdana; font-size:10pt; font-weight:bold;  }
+
+/* Use H4 for fourth-level headings. */
+H4 { margin-top:3.00pt; margin-bottom:3.00pt; font-family:Verdana; font-size:8pt; font-weight:bold;  }
+
+/* H5 and H6 have the same definition as H4 because you should not need this level of heading in one topic. If you need to use H5 or H6, consider breaking up your topic into more than one topic. */
+H5 { margin-top:3.00pt; margin-bottom:3.00pt; font-family:Verdana; font-size:8pt; font-weight:bold;  }
+H6 { margin-top:3.00pt; margin-bottom:3.00pt; font-family:Verdana; font-size:8pt; font-weight:bold;  }
+
+/* Use the Body style class for normal paragraphs. */
+P.Body { margin-top:6.00pt; margin-bottom:6.00pt; font-family:Verdana; font-size:8pt; color:#000000;  }
+
+/* Use the Anchor style class for graphic references on a line by themselves. */
+P.Anchor { margin-top:6.00pt; margin-bottom:6.00pt; font-family:Verdana; font-size:10pt; color:#000000;  }
+
+/* Use the Indent style classes to indent a paragraph. If you need to indent text below a list item, use <br><br> to start the new paragraph within the same set of <li></li> tags. If you need to indent a list within another list, nest the indented list within the first list's set of <ol></ol> or <ul></ul> tags. */
+P.Indent1 { margin-left:12.00pt; margin-top:6.00pt; margin-bottom:3.00pt; font-family:Verdana; font-size:8pt; color:#000000;  }
+P.Indent2 { margin-left:24.00pt; margin-top:6.00pt; margin-bottom:3.00pt; font-family:Verdana; font-size:8pt; color:#000000;  }
+P.Indent3 { margin-left:36.00pt; margin-top:6.00pt; margin-bottom:3.00pt; font-family:Verdana; font-size:8pt; color:#000000;  }
+
+/* Use the LI style for all list items. */
+LI { margin-top:3.00pt; margin-bottom:3.00pt; font-family:Verdana; font-size:8pt; color:#000000; }
+
+
+
+/* Use the OL style for numbered lists. You do not have to type the number for each list item in a numbered list. */
+OL { margin-left:18.00pt; margin-top:3.00pt; margin-bottom:3.00pt; text-indent:0pt; font-family:Verdana; font-size:8pt; color:#000000; list-style-type: decimal; }
+
+/* Use the OL style for numbered lists. Nested lists will use the bullet types according to the nesting scheme below */
+ol ol {list-style-type:lower-alpha}
+ol ol ol {list-style-type:decimal}
+ol ol ol ol {list-style-type:lower-alpha}
+ol ol ol ol ol {list-style-type:decimal}
+ol ol ol ol ol ol {list-style-type:lower-alpha}
+ol ol ol ol ol ol ol {list-style-type:decimal}
+ol ol ol ol ol ol ol ol {list-style-type:lower-alpha}
+
+
+/* Use the EquationNum style class for numbered lists of equations. You do not have to type the number for each list item in a numbered list. */
+OL.EquationNum { margin-left:36.00pt; margin-top:3.00pt; margin-bottom:3.00pt; text-indent:0pt; font-family:Verdana; font-size:8pt; color:#000000; list-style-type: decimal; }
+
+/* Use the List-abc style class for lettered lists. You do not have to type the letter for each list item in a lettered list. */
+OL.List-abc { margin-left:18.00pt; margin-top:3.00pt; margin-bottom:3.00pt; text-indent:0pt; font-family:Verdana; font-size:8pt; color:#000000; list-style-type:lower-alpha; }
+
+/* Use the UL style for bulleted lists. You do not have to type the bullet for each list item in a bulleted list. */
+UL { margin-left:12.00pt; text-indent:0pt; margin-top:3.00pt; margin-bottom:3.00pt; font-family:Verdana; font-size:8pt; color:#000000; list-style-type: disc; }
+
+/* Use the UL style for bulleted lists. Nested lists will use the bullet types according to the nesting scheme below. NOTE: hyphen.gif required in same directory as minimal.css */
+ul ul {list-style-image:url(hyphen.gif)}
+ul ul ul {list-style-image:none;list-style-type:disc}
+ul ul ul ul {list-style-image:url(hyphen.gif)}
+ul ul ul ul ul {list-style-image:none;list-style-type:disc}
+ul ul ul ul ul ul {list-style-image:url(hyphen.gif)}
+ul ul ul ul ul ul ul {list-style-image:none;list-style-type:disc}
+ul ul ul ul ul ul ul ul ul{list-style-image:url(hyphen.gif)}
+
+/* Use the List-Box style class for bulleted lists with boxes instead of bullets. You do not have to type the box for each list item in a box list. */
+UL.List-Box { margin-left:12.00pt; margin-top:3.00pt; margin-bottom:3.00pt; text-indent:0pt; font-family:Verdana; font-size:8pt; color:#000000; list-style-type: square; }
+
+/* Use the List-Diamond style class for bulleted lists with diamonds instead of bullets. You do not have to type the diamond for each list item in a diamond list. */
+UL.List-Diamond { margin-left:12.00pt; margin-top:3.00pt; margin-bottom:3.00pt; text-indent:0pt; font-family:Verdana; font-size:8pt; color:#000000; list-style-image:url(diamond.gif); }
+
+/* Use the List-Hyphen style class for bulleted lists with hyphens instead of bullets. You do not have to type the hyphen for each list item in a hyphen list. */
+UL.List-Hyphen { margin-left:12.00pt; margin-top:3.00pt; margin-bottom:3.00pt; text-indent:0pt; font-family:Verdana; font-size:8pt; color:#000000; list-style-image:url(hyphen.gif); }
+
+/* Use the Borderless style class for tables that do not need borders, such as for 2-column or 3-column lists with no headings. */
+Table.Borderless { border:none; }
+
+/* Use the Bordered style class for tables that need borders. */
+Table.Bordered { border-width: 1pt; border-style: solid; border-color: #000000; border-collapse: collapse; }
+
+/* Use the Borderless-Wide style class for tables that do not need borders and that you want to stretch to fill the entire topic width. */
+Table.Borderless-Wide { border:none; width:100%; }
+
+/* Use the Bordered-Wide style class for tables that need borders and that you want to stretch to fill the entire topic width. */
+Table.Bordered-Wide { border-width: 1pt; border-style: solid; border-color: #000000; width:100%; border-collapse: collapse; }
+
+/* Use the TD style for table cells in Borderless or Borderless-Wide tables. */
+TD { font-family:Verdana; font-size:8pt; color:#000000; vertical-align:top; padding:3px; }
+
+/* Use the Bordered style class for table cells in Bordered or Bordered-Wide tables. */
+TD.Bordered { font-family:Verdana; font-size:8pt; color:#000000; vertical-align:top; border-width: 1pt; border-style: solid; border-color: #000000; }
+
+/* Use the Icon style class for table cells that contain note, caution, warning, or tip icons, or LabVIEW datatype terminals. */
+TD.Icon { width:40px; vertical-align:top; }
+
+/* Use the Table-cell-8pt style class for table cells in tables that contain a lot of information and need smaller text to fit it all on one screen to prevent a horizontal scroll bar from appearing. */
+TD.Table-cell-8pt { font-family:Verdana; font-size:7pt; color:#000000;  }
+
+/* Use the TH style for table heading cells in Borderless or Borderless-Wide tables. */
+TH { font-family:Verdana; font-size:8pt; color:#000000; font-weight:bold; padding:3px; }
+
+/* Use the Bordered style class for table heading cells in Bordered or Bordered-Wide tables. */
+TH.Bordered { font-family:Verdana; font-size:8pt; color:#000000; font-weight:bold;  border-width: 1pt; border-style: solid; border-color: #000000; }
+
+/* Use the Table-cell-8pt style class for table heading cells in tables that contain a lot of information and need smaller text to fit it all on one screen to prevent a horizontal scroll bar from appearing. */
+TH.Table-Head-8pt { font-family:Verdana; font-size:7pt; color:#000000; font-weight:bold; }
+
+/* Use the Left-Align style class for table heading cells that you want to left align instead of center align. */
+TH.Left-Align { font-family:Verdana; font-size:8pt; color:#000000; font-weight:bold; padding:3px; text-align:left; }
+
+/***************************************************/
+/* CHARACTER FORMATS */
+/* The following section defines character formats that every HTML Help project should need. */
+
+/* Use the Dark-Red format for warnings or cautions. */
+#Dark-Red { color: #800000 }
+
+/* Use the Monospace format for code or syntax examples. */
+#Monospace { font-family: Courier New; font-size: 8pt; }
+
+/* Use the Monospace-Bold format for messages and responses that the computer automatically prints to the screen. */
+#Monospace-Bold { font-family: Courier New; font-size: 8pt; font-weight: bold; }
+
+/* Use the Monospace-Italic format to denote text that is a placeholder for a word or value that the user must supply. */
+#Monospace-Italic { font-family: Courier New; font-size: 8pt; font-style: italic; }
+
+/* Use the Platform format to denote a specific platform. */
+#Platform { color: #0000FF; font-weight: bold; }
+
+/* Use the Symbol format for characters not in the Verdana character set. Use this format sparingly. When possible, you should use the correct ASCII code for the symbol or use a graphic to recreate the symbol. */
+#Symbol { font-family: Symbol; font-size: 8pt; }
+
+/* CHARACTER FORMATS Updated to conform with the CSE HTML Validator Pro */
+/* The following section defines character formats that every HTML Help project should need. */
+
+/* Use the Dark-Red format for warnings or cautions. */
+.Dark-Red { color: #800000 }
+
+/* Use the Monospace format for code or syntax examples. */
+.Monospace { font-family: Courier New; font-size: 8pt; }
+
+/* Use the Monospace-Bold format for messages and responses that the computer automatically prints to the screen. */
+.Monospace-Bold { font-family: Courier New; font-size: 8pt; font-weight: bold; }
+
+/* Use the Monospace-Italic format to denote text that is a placeholder for a word or value that the user must supply. */
+.Monospace-Italic { font-family: Courier New; font-size: 8pt; font-style: italic; }
+
+/* Use the Platform format to denote a specific platform. */
+.Platform { color: #0000FF; font-weight: bold; }
+
+/* Use the Symbol format for characters not in the Verdana character set. Use this format sparingly. When possible, you should use the correct ASCII code for the symbol or use a graphic to recreate the symbol. */
+.Symbol { font-family: Symbol; font-size: 8pt; }
+
+/* Use the Red-text format to call attention to text that needs  information added or edited by techcomm */
+.Red-text {color: #FF0000;}
+
+/* Use the Green-Underline format for the green defintion in the conventions topic */
+.Green-Underline {color: #007700;	text-decoration : underline;}
+
+/* Use the glossButton format for the glossary buttons used in the glossary topic */
+.glossButton { font-family:Verdana; font-size:12px; color:black; }
+
+
+
+/* The following styles define the color of links. */
+a:link { color: #007700 }
+a:hover { color: #FF0000 }
+a:active { color: #FF0000 }
+a:visited { color: #7F007F }
+
+/***************************************************/
+/* ACTIVITY STYLES */
+/* The following section defines styles that only tutorial-style HTML Help projects should need. */
+
+/* Use the Activity-Objective style class for the objective at the beginning of an activity topic. */
+H3.Activity-Objective { color: #800000; }
+
+<style>/***************************************************/
+/* CODE STYLES */
+/* The following section defines styles that you need to format entire sections of code or syntax examples. If you have just a few words you need to format as a code or syntax example, use the Monospace character format. */
+
+P.Code { margin-top:3.00pt; margin-bottom:0.00pt; font-family:Courier New; font-size:8pt; color:#000000;  }
+P.Code1 { margin-left:12.00pt; margin-top:3.00pt; margin-bottom:0.00pt; font-family:Courier New; font-size:8pt; color:#000000;  }
+P.Code2 { margin-left:24.00pt; margin-top:3.00pt; margin-bottom:0.00pt; font-family:Courier New; font-size:8pt; color:#000000;  }
+P.Code3 { margin-left:36.00pt; margin-top:3.00pt; margin-bottom:0.00pt; font-family:Courier New; font-size:8pt; color:#000000;  }
+
+/***************************************************/
+/* FUNCTION STYLES */
+/* The following section defines styles that you might need to format function reference help. */
+
+P.F-VI-Code4 { margin-left:48.00pt; margin-top:3.00pt; margin-bottom:0.00pt; font-family:Courier New; font-size:8pt; color:#000000;  }
+P.F-VI-Code5 { margin-left:60.00pt; margin-top:3.00pt; margin-bottom:0.00pt; font-family:Courier New; font-size:8pt; color:#000000;  }
+P.F-VI-Equation { margin-top:9.00pt; margin-bottom:9.00pt; font-family:Verdana; font-size:8pt; color:#000000;  }
+
+OL.F-VI-EquationNum { margin-top:3.00pt; margin-bottom:3.00pt; text-indent:0pt; font-family:Verdana; font-size:8pt; color:#000000; list-style-type: decimal; }
+</style>
+</head>
+
+<body bgcolor="#FFFFFF">
+<h1>Suppported Properties/Attributes for M Series Devices</h1>
+
+<a name="apitop"></a>
+<p class="Body">The following sections list the  properties/attributes that are supported for M Series devices in NI-DAQ 7.3: </p>
+
+<li><a href="#6220">NI 6220/6224 Supported Properties/Attributes</a> </li> 
+<li><a href="#6250">NI 6250/6254 Supported Properties/Attributes</a></li>
+<li><a href="#6280">NI 6280/6284 Supported Properties/Attributes</a></li>
+<li><a href="#6221">NI 6221/6229 Supported Properties/Attributes</a></li>
+<li><a href="#6251">NI 6251/6259 Supported Properties/Attributes</a></li>
+<li><a href="#6281">NI 6281/6289 Supported Properties/Attributes</a></li>
+</ul>
+
+<a name="6220"></a><h2>NI 6220/6224 Supported Properties/Attributes</h2>
+
+<h3>DAQmx Calibration Info Properties/Attributes</h3>
+<p class="Body">
+Active Device<br>
+Self Calibration:Is Supported<br>
+Self Calibration:Last Self Calibration Date/Time<br>
+Self Calibration:Last Self Calibration Temperature<br>
+External Calibration:Recommended Interval<br>
+External Calibration:Last External Calibration Date/Time<br>
+External Calibration:Last External Calibration Temperature<br>
+User Defined Information:Information<br>
+User Defined Information:Max Size<br>
+More:Device Temperature<br>
+</p>
+
+<h3>DAQmx Channel Properties/Attributes</h3>
+<p class="Body">
+Active Channels<br>
+Channel Type<br>
+Physical Channel Name<br>
+Description<br>
+Analog Input:Maximum Value<br>
+Analog Input:Minimum Value<br>
+Analog Input:Custom Scale Name<br>
+Analog Input:Measurement Type<br>
+Analog Input:Voltage:Units<br>
+Analog Input:Temperature:Units<br>
+Analog Input:Temperature:Thermocouple:Type<br>
+Analog Input:Temperature:Thermocouple:CJC Source<br>
+Analog Input:Temperature:Thermocouple:CJC Value<br>
+Analog Input:Temperature:Thermocouple:CJC Channel<br>
+Analog Input:Current:Units<br>
+Analog Input:Strain:Units<br>
+Analog Input:Strain:Strain Gage:Gage Factor<br>
+Analog Input:Strain:Strain Gage:Poisson Ratio<br>
+Analog Input:Strain:Strain Gage:Configuration<br>
+Analog Input:Resistance:Units<br>
+Analog Input:TEDS:Units<br>
+Analog Input:General Properties/Attributes:Input Configuration:Terminal Configuration<br>
+Analog Input:General Properties/Attributes:Signal Conditioning:Lead Wire Resistance<br>
+Analog Input:General Properties/Attributes:Signal Conditioning:Bridge:Configuration<br>
+Analog Input:General Properties/Attributes:Signal Conditioning:Bridge:Nominal Resistance<br>
+Analog Input:General Properties/Attributes:Signal Conditioning:Bridge:Initial Bridge Voltage<br>
+Analog Input:General Properties/Attributes:Signal Conditioning:Current Shunt Resistor:Location<br>
+Analog Input:General Properties/Attributes:Signal Conditioning:Current Shunt Resistor:Value<br>
+Analog Input:General Properties/Attributes:Signal Conditioning:Excitation:Source<br>
+Analog Input:General Properties/Attributes:Signal Conditioning:Excitation:Value<br>
+Analog Input:General Properties/Attributes:Signal Conditioning:Excitation:Advanced:Use Excitation For Scaling<br>
+Analog Input:General Properties/Attributes:Signal Conditioning:Excitation:Advanced:Actual Excitation Value<br>
+Analog Input:General Properties/Attributes:Signal Conditioning:Excitation:Advanced:Voltage or Current<br>
+Analog Input:General Properties/Attributes:Digitizer/ADC:Resolution Units<br>
+Analog Input:General Properties/Attributes:Digitizer/ADC:Resolution Value<br>
+Analog Input:General Properties/Attributes:Digitizer/ADC:Dither:Enable<br>
+Analog Input:General Properties/Attributes:Advanced:Range:High<br>
+Analog Input:General Properties/Attributes:Advanced:Range:Low<br>
+Analog Input:General Properties/Attributes:Advanced:Data Transfer and Memory:Data Transfer Mechanism<br>
+Analog Input:General Properties/Attributes:Advanced:Data Transfer and Memory:Data Transfer Request Condition<br>
+Analog Input:General Properties/Attributes:Advanced:Data Transfer and Memory:Memory Mapping for Programmed IO Enable<br>
+Analog Input:General Properties/Attributes:Advanced:Device Scaling Coefficients:Device Scaling Coefficients<br>
+Digital Input:Invert Lines<br>
+Digital Input:Number of Lines<br>
+Digital Input:Tristate<br>
+Digital Input:General Properties/Attributes:Advanced:Data Transfer and Memory:Data Transfer Mechanism<br>
+Digital Input:General Properties/Attributes:Advanced:Data Transfer and Memory:Data Transfer Request Condition<br>
+Digital Output:Invert Lines<br>
+Digital Output:Number of Lines<br>
+Digital Output:Tristate<br>
+Digital Output:General Properties/Attributes:Advanced:Data Transfer and Memory:Use Only On Board Memory<br>
+Digital Output:General Properties/Attributes:Advanced:Data Transfer and Memory:Data Transfer Mechanism<br>
+Digital Output:General Properties/Attributes:Advanced:Data Transfer and Memory:Data Transfer Request Condition<br>
+Counter Input:Maximum Value<br>
+Counter Input:Minimum Value<br>
+Counter Input:Custom Scale Name<br>
+Counter Input:Measurement Type<br>
+Counter Input:Frequency:Units<br>
+Counter Input:Frequency:Input Terminal<br>
+Counter Input:Frequency:Starting Edge<br>
+Counter Input:Frequency:Measurement Specifications:Method<br>
+Counter Input:Frequency:Measurement Specifications:High Frequency:Measurement Time<br>
+Counter Input:Frequency:Measurement Specifications:Large Range:Divisor<br>
+Counter Input:Frequency:Digital Filter:Enable<br>
+Counter Input:Frequency:Digital Filter:Minimum Pulse Width<br>
+Counter Input:Frequency:Digital Filter:Timebase:Source<br>
+Counter Input:Frequency:Digital Filter:Timebase:Rate<br>
+Counter Input:Frequency:Digital Synchronization:Enable<br>
+Counter Input:Period:Units<br>
+Counter Input:Period:Input Terminal<br>
+Counter Input:Period:Starting Edge<br>
+Counter Input:Period:Measurement Specifications:Method<br>
+Counter Input:Period:Measurement Specifications:High Frequency:Measurement Time<br>
+Counter Input:Period:Measurement Specifications:Large Range:Divisor<br>
+Counter Input:Period:Digital Filter:Enable<br>
+Counter Input:Period:Digital Filter:Minimum Pulse Width<br>
+Counter Input:Period:Digital Filter:Timebase:Source<br>
+Counter Input:Period:Digital Filter:Timebase:Rate<br>
+Counter Input:Period:Digital Synchronization:Enable<br>
+Counter Input:Count Edges:Input Terminal<br>
+Counter Input:Count Edges:Count Direction:Direction<br>
+Counter Input:Count Edges:Count Direction:Terminal<br>
+Counter Input:Count Edges:Count Direction:Digital Filter:Enable<br>
+Counter Input:Count Edges:Count Direction:Digital Filter:Minimum Pulse Width<br>
+Counter Input:Count Edges:Count Direction:Digital Filter:Timebase:Source<br>
+Counter Input:Count Edges:Count Direction:Digital Filter:Timebase:Rate<br>
+Counter Input:Count Edges:Count Direction:Digital Synchronization:Enable<br>
+Counter Input:Count Edges:Initial Count<br>
+Counter Input:Count Edges:Active Edge<br>
+Counter Input:Count Edges:Digital Filter:Enable<br>
+Counter Input:Count Edges:Digital Filter:Minimum Pulse Width<br>
+Counter Input:Count Edges:Digital Filter:Timebase:Source<br>
+Counter Input:Count Edges:Digital Filter:Timebase:Rate<br>
+Counter Input:Count Edges:Digital Synchronization:Enable<br>
+Counter Input:Position:Angular Encoder:Units<br>
+Counter Input:Position:Angular Encoder:Pulses Per Revolution<br>
+Counter Input:Position:Angular Encoder:Initial Angle<br>
+Counter Input:Position:Linear Encoder:Units<br>
+Counter Input:Position:Linear Encoder:Distance Per Pulse<br>
+Counter Input:Position:Linear Encoder:Initial Position<br>
+Counter Input:Position:Decoding Type<br>
+Counter Input:Position:A Input:Terminal<br>
+Counter Input:Position:A Input:Digital Filter:Enable<br>
+Counter Input:Position:A Input:Digital Filter:Minimum Pulse Width<br>
+Counter Input:Position:A Input:Digital Filter:Timebase:Source<br>
+Counter Input:Position:A Input:Digital Filter:Timebase:Rate<br>
+Counter Input:Position:A Input:Digital Synchronization:Enable<br>
+Counter Input:Position:B Input:Terminal<br>
+Counter Input:Position:B Input:Digital Filter:Enable<br>
+Counter Input:Position:B Input:Digital Filter:Minimum Pulse Width<br>
+Counter Input:Position:B Input:Digital Filter:Timebase:Source<br>
+Counter Input:Position:B Input:Digital Filter:Timebase:Rate<br>
+Counter Input:Position:B Input:Digital Synchronization:Enable<br>
+Counter Input:Position:Z Input:Terminal<br>
+Counter Input:Position:Z Input:Digital Filter:Enable<br>
+Counter Input:Position:Z Input:Digital Filter:Minimum Pulse Width<br>
+Counter Input:Position:Z Input:Digital Filter:Timebase:Source<br>
+Counter Input:Position:Z Input:Digital Filter:Timebase:Rate<br>
+Counter Input:Position:Z Input:Digital Synchronization:Enable<br>
+Counter Input:Position:Z Index Enable<br>
+Counter Input:Position:Z Index Value<br>
+Counter Input:Position:Z Index Phase<br>
+Counter Input:Pulse Width:Units<br>
+Counter Input:Pulse Width:Input Terminal<br>
+Counter Input:Pulse Width:Starting Edge<br>
+Counter Input:Pulse Width:Digital Filter:Enable<br>
+Counter Input:Pulse Width:Digital Filter:Minimum Pulse Width<br>
+Counter Input:Pulse Width:Digital Filter:Timebase:Source<br>
+Counter Input:Pulse Width:Digital Filter:Timebase:Rate<br>
+Counter Input:Pulse Width:Digital Synchronization:Enable<br>
+Counter Input:Two Edge Separation:Units<br>
+Counter Input:Two Edge Separation:First:Input Terminal<br>
+Counter Input:Two Edge Separation:First:Edge<br>
+Counter Input:Two Edge Separation:First:Digital Filter:Enable<br>
+Counter Input:Two Edge Separation:First:Digital Filter:Minimum Pulse Width<br>
+Counter Input:Two Edge Separation:First:Digital Filter:Timebase:Source<br>
+Counter Input:Two Edge Separation:First:Digital Filter:Timebase:Rate<br>
+Counter Input:Two Edge Separation:First:Digital Synchronization:Enable<br>
+Counter Input:Two Edge Separation:Second:Input Terminal<br>
+Counter Input:Two Edge Separation:Second:Edge<br>
+Counter Input:Two Edge Separation:Second:Digital Filter:Enable<br>
+Counter Input:Two Edge Separation:Second:Digital Filter:Minimum Pulse Width<br>
+Counter Input:Two Edge Separation:Second:Digital Filter:Timebase:Source<br>
+Counter Input:Two Edge Separation:Second:Digital Filter:Timebase:Rate<br>
+Counter Input:Two Edge Separation:Second:Digital Synchronization:Enable<br>
+Counter Input:Semi-Period:Units<br>
+Counter Input:Semi-Period:Input Terminal<br>
+Counter Input:Semi-Period:Digital Filter:Enable<br>
+Counter Input:Semi-Period:Digital Filter:Minimum Pulse Width<br>
+Counter Input:Semi-Period:Digital Filter:Timebase:Source<br>
+Counter Input:Semi-Period:Digital Filter:Timebase:Rate<br>
+Counter Input:Semi-Period:Digital Synchronization:Enable<br>
+Counter Input:General Properties/Attributes:Counter Timebase:Source<br>
+Counter Input:General Properties/Attributes:Counter Timebase:Rate<br>
+Counter Input:General Properties/Attributes:Counter Timebase:Active Edge<br>
+Counter Input:General Properties/Attributes:Counter Timebase:Digital Filter:Enable<br>
+Counter Input:General Properties/Attributes:Counter Timebase:Digital Filter:Minimum Pulse Width<br>
+Counter Input:General Properties/Attributes:Counter Timebase:Digital Filter:Timebase:Source<br>
+Counter Input:General Properties/Attributes:Counter Timebase:Digital Filter:Timebase:Rate<br>
+Counter Input:General Properties/Attributes:Counter Timebase:Digital Synchronization:Enable<br>
+Counter Input:General Properties/Attributes:More:Count<br>
+Counter Input:General Properties/Attributes:More:Output State<br>
+Counter Input:General Properties/Attributes:More:Terminal Count Reached<br>
+Counter Input:General Properties/Attributes:More:Advanced:Data Transfer and Memory:Data Transfer Mechanism<br>
+Counter Input:General Properties/Attributes:More:Advanced:Duplicate Count Prevention<br>
+Counter Input:General Properties/Attributes:More:Advanced:Prescaler<br>
+Counter Output:Output Type<br>
+Counter Output:Pulse:Idle State<br>
+Counter Output:Pulse:Output Terminal<br>
+Counter Output:Pulse:Time:Units<br>
+Counter Output:Pulse:Time:High Time<br>
+Counter Output:Pulse:Time:Low Time<br>
+Counter Output:Pulse:Time:Initial Delay<br>
+Counter Output:Pulse:Frequency:Duty Cycle<br>
+Counter Output:Pulse:Frequency:Units<br>
+Counter Output:Pulse:Frequency:Frequency<br>
+Counter Output:Pulse:Frequency:Initial Delay<br>
+Counter Output:Pulse:Ticks:High Ticks<br>
+Counter Output:Pulse:Ticks:Low Ticks<br>
+Counter Output:Pulse:Ticks:Initial Delay<br>
+Counter Output:General Properties/Attributes:Counter Timebase:Source<br>
+Counter Output:General Properties/Attributes:Counter Timebase:Rate<br>
+Counter Output:General Properties/Attributes:Counter Timebase:Active Edge<br>
+Counter Output:General Properties/Attributes:Counter Timebase:Digital Filter:Enable<br>
+Counter Output:General Properties/Attributes:Counter Timebase:Digital Filter:Minimum Pulse Width<br>
+Counter Output:General Properties/Attributes:Counter Timebase:Digital Filter:Timebase:Source<br>
+Counter Output:General Properties/Attributes:Counter Timebase:Digital Filter:Timebase:Rate<br>
+Counter Output:General Properties/Attributes:Counter Timebase:Digital Synchronization:Enable<br>
+Counter Output:General Properties/Attributes:More:Count<br>
+Counter Output:General Properties/Attributes:More:Output State<br>
+Counter Output:General Properties/Attributes:More:Auto Increment Count<br>
+Counter Output:General Properties/Attributes:More:Pulse Done<br>
+Counter Output:General Properties/Attributes:More:Advanced:Prescaler<br>
+</p>
+
+<h3>DAQmx Export Signal Properties/Attributes</h3>
+<p class="Body">
+Clocks:AI Convert Clock:Output Terminal<br>
+Clocks:Sample Clock:Output Behavior<br>
+Clocks:Sample Clock:Output Terminal<br>
+Triggers:Reference Trigger:Output Terminal<br>
+Triggers:Start Trigger:Output Terminal<br>
+Events:AI Hold Complete Event:Output Terminal<br>
+Events:AI Hold Complete Event:Pulse:Polarity<br>
+Events:Counter Output Event:Output Terminal<br>
+Events:Counter Output Event:Output Behavior<br>
+Events:Counter Output Event:Pulse:Polarity<br>
+Events:Counter Output Event:Toggle:Idle State<br>
+</p>
+
+<h3>DAQmx Read Properties/Attributes</h3>
+<p class="Body">
+RelativeTo<br>
+Offset<br>
+Channels to Read<br>
+Waveform Attributes<br>
+Read All Available Samples<br>
+Auto Start<br>
+Configure:OverWrite Mode<br>
+Status:Current Read Position<br>
+Status:Available Samples Per Channel<br>
+Status:Total Samples Per Channel Acquired<br>
+Advanced:Raw Data Width<br>
+Advanced:Number of Channels<br>
+Advanced:Digital Input:Number of Booleans Per Channel<br>
+Advanced:Wait Mode<br>
+</p>
+
+<h3>DAQmx Timing Properties/Attributes</h3>
+<p class="Body">
+Sample Quantity:Sample Mode<br>
+Sample Quantity:Samples Per Channel<br>
+Sample Timing Type<br>
+Sample Clock:Rate<br>
+Sample Clock:Source<br>
+Sample Clock:Active Edge<br>
+Sample Clock:Timebase Divisor<br>
+Sample Clock:Timebase:Rate<br>
+Sample Clock:Timebase:Source<br>
+Sample Clock:Timebase:Active Edge<br>
+Sample Clock:Digital Filter:Enable<br>
+Sample Clock:Digital Filter:Minimum Pulse Width<br>
+Sample Clock:Digital Filter:Timebase:Source<br>
+Sample Clock:Digital Filter:Timebase:Rate<br>
+Sample Clock:Digital Synchronization:Enable<br>
+More:AI Convert:Rate<br>
+More:AI Convert:Source<br>
+More:AI Convert:Active Edge<br>
+More:AI Convert:Timebase Divisor<br>
+More:AI Convert:Timebase:Source<br>
+More:Reference Clock:Rate<br>
+More:Reference Clock:Source<br>
+More:Delay From Sample Clock:Delay Units<br>
+More:Delay From Sample Clock:Delay<br>
+</p>
+
+<h3>DAQmx Trigger Properties/Attributes</h3>
+<p class="Body">
+Start:Trigger Type<br>
+Start:Digital Edge:Source<br>
+Start:Digital Edge:Edge<br>
+Start:Digital Edge:Digital Filter:Enable<br>
+Start:Digital Edge:Digital Filter:Minimum Pulse Width<br>
+Start:Digital Edge:Digital Filter:Timebase:Source<br>
+Start:Digital Edge:Digital Filter:Timebase:Rate<br>
+Start:Digital Edge:Digital Synchronization:Enable<br>
+Start:More:Delay<br>
+Start:More:Delay Units<br>
+Start:More:Retriggerable<br>
+Reference:Trigger Type<br>
+Reference:Pretrigger Samples per Channel<br>
+Reference:Digital Edge:Source<br>
+Reference:Digital Edge:Edge<br>
+More:Pause:Trigger Type<br>
+More:Pause:Digital Level:Source<br>
+More:Pause:Digital Level:Pause When<br>
+More:Pause:Digital Level:Digital Filter:Enable<br>
+More:Pause:Digital Level:Digital Filter:Minimum Pulse Width<br>
+More:Pause:Digital Level:Digital Filter:Timebase:Source<br>
+More:Pause:Digital Level:Digital Filter:Timebase:Rate<br>
+More:Pause:Digital Level:Digital Synchronization:Enable<br>
+More:Arm Start:Trigger Type<br>
+More:Arm Start:Digital Edge:Source<br>
+More:Arm Start:Digital Edge:Edge<br>
+More:Arm Start:Digital Edge:Digital Filter:Enable<br>
+More:Arm Start:Digital Edge:Digital Filter:Minimum Pulse Width<br>
+More:Arm Start:Digital Edge:Digital Filter:Timebase:Source<br>
+More:Arm Start:Digital Edge:Digital Filter:Timebase:Rate<br>
+More:Arm Start:Digital Edge:Digital Synchronization:Enable<br>
+</p>
+
+<h3>DAQmx Write Properties/Attributes</h3>
+<p class="Body">
+Relative To<br>
+Offset<br>
+Configure:Regeneration Mode<br>
+Status:Current Write Position<br>
+Status:Space Available in Buffer<br>
+Status:Total Samples Per Channel Generated<br>
+Advanced:Raw Data Width<br>
+Advanced:Number of Channels<br>
+Advanced:Digital Output:Number of Booleans Per Channel<br>
+</p>
+
+<h3>DAQmx Timing Source Properties/Attributes</h3>
+<p class="Body">
+Active Timing Source<br>
+Timing Source Type<br>
+Frequency:Counter<br>
+Frequency:Frequency<br>
+Digital Edge using Counter:Counter<br>
+Digital Edge using Counter:Edge<br>
+Digital Edge using Counter:Edge Count<br>
+Digital Edge using Counter:Terminal<br>
+Signal From Task:Signal<br>
+</p>
+
+<p class="Body"><a href="#apitop">Return to top</a></p>
+
+
+<a name="6250"></a><h2>NI 6250/6254 Supported Properties/Attributes</h2>
+
+<h3>DAQmx Calibration Info Properties/Attributes</h3>
+<p class="Body">
+Active Device<br>
+Self Calibration:Is Supported<br>
+Self Calibration:Last Self Calibration Date/Time<br>
+Self Calibration:Last Self Calibration Temperature<br>
+External Calibration:Recommended Interval<br>
+External Calibration:Last External Calibration Date/Time<br>
+External Calibration:Last External Calibration Temperature<br>
+User Defined Information:Information<br>
+User Defined Information:Max Size<br>
+More:Device Temperature<br>
+</p>
+
+<h3>DAQmx Channel Properties/Attributes</h3>
+<p class="Body">
+Active Channels<br>
+Channel Type<br>
+Physical Channel Name<br>
+Description<br>
+Analog Input:Maximum Value<br>
+Analog Input:Minimum Value<br>
+Analog Input:Custom Scale Name<br>
+Analog Input:Measurement Type<br>
+Analog Input:Voltage:Units<br>
+Analog Input:Temperature:Units<br>
+Analog Input:Temperature:Thermocouple:Type<br>
+Analog Input:Temperature:Thermocouple:CJC Source<br>
+Analog Input:Temperature:Thermocouple:CJC Value<br>
+Analog Input:Temperature:Thermocouple:CJC Channel<br>
+Analog Input:Current:Units<br>
+Analog Input:Strain:Units<br>
+Analog Input:Strain:Strain Gage:Gage Factor<br>
+Analog Input:Strain:Strain Gage:Poisson Ratio<br>
+Analog Input:Strain:Strain Gage:Configuration<br>
+Analog Input:Resistance:Units<br>
+Analog Input:TEDS:Units<br>
+Analog Input:General Properties/Attributes:Input Configuration:Terminal Configuration<br>
+Analog Input:General Properties/Attributes:Signal Conditioning:Lead Wire Resistance<br>
+Analog Input:General Properties/Attributes:Signal Conditioning:Bridge:Configuration<br>
+Analog Input:General Properties/Attributes:Signal Conditioning:Bridge:Nominal Resistance<br>
+Analog Input:General Properties/Attributes:Signal Conditioning:Bridge:Initial Bridge Voltage<br>
+Analog Input:General Properties/Attributes:Signal Conditioning:Current Shunt Resistor:Location<br>
+Analog Input:General Properties/Attributes:Signal Conditioning:Current Shunt Resistor:Value<br>
+Analog Input:General Properties/Attributes:Signal Conditioning:Excitation:Source<br>
+Analog Input:General Properties/Attributes:Signal Conditioning:Excitation:Value<br>
+Analog Input:General Properties/Attributes:Signal Conditioning:Excitation:Advanced:Use Excitation For Scaling<br>
+Analog Input:General Properties/Attributes:Signal Conditioning:Excitation:Advanced:Actual Excitation Value<br>
+Analog Input:General Properties/Attributes:Signal Conditioning:Excitation:Advanced:Voltage or Current<br>
+Analog Input:General Properties/Attributes:Digitizer/ADC:Resolution Units<br>
+Analog Input:General Properties/Attributes:Digitizer/ADC:Resolution Value<br>
+Analog Input:General Properties/Attributes:Digitizer/ADC:Dither:Enable<br>
+Analog Input:General Properties/Attributes:Advanced:Range:High<br>
+Analog Input:General Properties/Attributes:Advanced:Range:Low<br>
+Analog Input:General Properties/Attributes:Advanced:Data Transfer and Memory:Data Transfer Mechanism<br>
+Analog Input:General Properties/Attributes:Advanced:Data Transfer and Memory:Data Transfer Request Condition<br>
+Analog Input:General Properties/Attributes:Advanced:Data Transfer and Memory:Memory Mapping for Programmed IO Enable<br>
+Analog Input:General Properties/Attributes:Advanced:Device Scaling Coefficients:Device Scaling Coefficients<br>
+Digital Input:Invert Lines<br>
+Digital Input:Number of Lines<br>
+Digital Input:Tristate<br>
+Digital Input:General Properties/Attributes:Advanced:Data Transfer and Memory:Data Transfer Mechanism<br>
+Digital Input:General Properties/Attributes:Advanced:Data Transfer and Memory:Data Transfer Request Condition<br>
+Digital Output:Invert Lines<br>
+Digital Output:Number of Lines<br>
+Digital Output:Tristate<br>
+Digital Output:General Properties/Attributes:Advanced:Data Transfer and Memory:Use Only On Board Memory<br>
+Digital Output:General Properties/Attributes:Advanced:Data Transfer and Memory:Data Transfer Mechanism<br>
+Digital Output:General Properties/Attributes:Advanced:Data Transfer and Memory:Data Transfer Request Condition<br>
+Counter Input:Maximum Value<br>
+Counter Input:Minimum Value<br>
+Counter Input:Custom Scale Name<br>
+Counter Input:Measurement Type<br>
+Counter Input:Frequency:Units<br>
+Counter Input:Frequency:Input Terminal<br>
+Counter Input:Frequency:Starting Edge<br>
+Counter Input:Frequency:Measurement Specifications:Method<br>
+Counter Input:Frequency:Measurement Specifications:High Frequency:Measurement Time<br>
+Counter Input:Frequency:Measurement Specifications:Large Range:Divisor<br>
+Counter Input:Frequency:Digital Filter:Enable<br>
+Counter Input:Frequency:Digital Filter:Minimum Pulse Width<br>
+Counter Input:Frequency:Digital Filter:Timebase:Source<br>
+Counter Input:Frequency:Digital Filter:Timebase:Rate<br>
+Counter Input:Frequency:Digital Synchronization:Enable<br>
+Counter Input:Period:Units<br>
+Counter Input:Period:Input Terminal<br>
+Counter Input:Period:Starting Edge<br>
+Counter Input:Period:Measurement Specifications:Method<br>
+Counter Input:Period:Measurement Specifications:High Frequency:Measurement Time<br>
+Counter Input:Period:Measurement Specifications:Large Range:Divisor<br>
+Counter Input:Period:Digital Filter:Enable<br>
+Counter Input:Period:Digital Filter:Minimum Pulse Width<br>
+Counter Input:Period:Digital Filter:Timebase:Source<br>
+Counter Input:Period:Digital Filter:Timebase:Rate<br>
+Counter Input:Period:Digital Synchronization:Enable<br>
+Counter Input:Count Edges:Input Terminal<br>
+Counter Input:Count Edges:Count Direction:Direction<br>
+Counter Input:Count Edges:Count Direction:Terminal<br>
+Counter Input:Count Edges:Count Direction:Digital Filter:Enable<br>
+Counter Input:Count Edges:Count Direction:Digital Filter:Minimum Pulse Width<br>
+Counter Input:Count Edges:Count Direction:Digital Filter:Timebase:Source<br>
+Counter Input:Count Edges:Count Direction:Digital Filter:Timebase:Rate<br>
+Counter Input:Count Edges:Count Direction:Digital Synchronization:Enable<br>
+Counter Input:Count Edges:Initial Count<br>
+Counter Input:Count Edges:Active Edge<br>
+Counter Input:Count Edges:Digital Filter:Enable<br>
+Counter Input:Count Edges:Digital Filter:Minimum Pulse Width<br>
+Counter Input:Count Edges:Digital Filter:Timebase:Source<br>
+Counter Input:Count Edges:Digital Filter:Timebase:Rate<br>
+Counter Input:Count Edges:Digital Synchronization:Enable<br>
+Counter Input:Position:Angular Encoder:Units<br>
+Counter Input:Position:Angular Encoder:Pulses Per Revolution<br>
+Counter Input:Position:Angular Encoder:Initial Angle<br>
+Counter Input:Position:Linear Encoder:Units<br>
+Counter Input:Position:Linear Encoder:Distance Per Pulse<br>
+Counter Input:Position:Linear Encoder:Initial Position<br>
+Counter Input:Position:Decoding Type<br>
+Counter Input:Position:A Input:Terminal<br>
+Counter Input:Position:A Input:Digital Filter:Enable<br>
+Counter Input:Position:A Input:Digital Filter:Minimum Pulse Width<br>
+Counter Input:Position:A Input:Digital Filter:Timebase:Source<br>
+Counter Input:Position:A Input:Digital Filter:Timebase:Rate<br>
+Counter Input:Position:A Input:Digital Synchronization:Enable<br>
+Counter Input:Position:B Input:Terminal<br>
+Counter Input:Position:B Input:Digital Filter:Enable<br>
+Counter Input:Position:B Input:Digital Filter:Minimum Pulse Width<br>
+Counter Input:Position:B Input:Digital Filter:Timebase:Source<br>
+Counter Input:Position:B Input:Digital Filter:Timebase:Rate<br>
+Counter Input:Position:B Input:Digital Synchronization:Enable<br>
+Counter Input:Position:Z Input:Terminal<br>
+Counter Input:Position:Z Input:Digital Filter:Enable<br>
+Counter Input:Position:Z Input:Digital Filter:Minimum Pulse Width<br>
+Counter Input:Position:Z Input:Digital Filter:Timebase:Source<br>
+Counter Input:Position:Z Input:Digital Filter:Timebase:Rate<br>
+Counter Input:Position:Z Input:Digital Synchronization:Enable<br>
+Counter Input:Position:Z Index Enable<br>
+Counter Input:Position:Z Index Value<br>
+Counter Input:Position:Z Index Phase<br>
+Counter Input:Pulse Width:Units<br>
+Counter Input:Pulse Width:Input Terminal<br>
+Counter Input:Pulse Width:Starting Edge<br>
+Counter Input:Pulse Width:Digital Filter:Enable<br>
+Counter Input:Pulse Width:Digital Filter:Minimum Pulse Width<br>
+Counter Input:Pulse Width:Digital Filter:Timebase:Source<br>
+Counter Input:Pulse Width:Digital Filter:Timebase:Rate<br>
+Counter Input:Pulse Width:Digital Synchronization:Enable<br>
+Counter Input:Two Edge Separation:Units<br>
+Counter Input:Two Edge Separation:First:Input Terminal<br>
+Counter Input:Two Edge Separation:First:Edge<br>
+Counter Input:Two Edge Separation:First:Digital Filter:Enable<br>
+Counter Input:Two Edge Separation:First:Digital Filter:Minimum Pulse Width<br>
+Counter Input:Two Edge Separation:First:Digital Filter:Timebase:Source<br>
+Counter Input:Two Edge Separation:First:Digital Filter:Timebase:Rate<br>
+Counter Input:Two Edge Separation:First:Digital Synchronization:Enable<br>
+Counter Input:Two Edge Separation:Second:Input Terminal<br>
+Counter Input:Two Edge Separation:Second:Edge<br>
+Counter Input:Two Edge Separation:Second:Digital Filter:Enable<br>
+Counter Input:Two Edge Separation:Second:Digital Filter:Minimum Pulse Width<br>
+Counter Input:Two Edge Separation:Second:Digital Filter:Timebase:Source<br>
+Counter Input:Two Edge Separation:Second:Digital Filter:Timebase:Rate<br>
+Counter Input:Two Edge Separation:Second:Digital Synchronization:Enable<br>
+Counter Input:Semi-Period:Units<br>
+Counter Input:Semi-Period:Input Terminal<br>
+Counter Input:Semi-Period:Digital Filter:Enable<br>
+Counter Input:Semi-Period:Digital Filter:Minimum Pulse Width<br>
+Counter Input:Semi-Period:Digital Filter:Timebase:Source<br>
+Counter Input:Semi-Period:Digital Filter:Timebase:Rate<br>
+Counter Input:Semi-Period:Digital Synchronization:Enable<br>
+Counter Input:General Properties/Attributes:Counter Timebase:Source<br>
+Counter Input:General Properties/Attributes:Counter Timebase:Rate<br>
+Counter Input:General Properties/Attributes:Counter Timebase:Active Edge<br>
+Counter Input:General Properties/Attributes:Counter Timebase:Digital Filter:Enable<br>
+Counter Input:General Properties/Attributes:Counter Timebase:Digital Filter:Minimum Pulse Width<br>
+Counter Input:General Properties/Attributes:Counter Timebase:Digital Filter:Timebase:Source<br>
+Counter Input:General Properties/Attributes:Counter Timebase:Digital Filter:Timebase:Rate<br>
+Counter Input:General Properties/Attributes:Counter Timebase:Digital Synchronization:Enable<br>
+Counter Input:General Properties/Attributes:More:Count<br>
+Counter Input:General Properties/Attributes:More:Output State<br>
+Counter Input:General Properties/Attributes:More:Terminal Count Reached<br>
+Counter Input:General Properties/Attributes:More:Advanced:Data Transfer and Memory:Data Transfer Mechanism<br>
+Counter Input:General Properties/Attributes:More:Advanced:Duplicate Count Prevention<br>
+Counter Input:General Properties/Attributes:More:Advanced:Prescaler<br>
+Counter Output:Output Type<br>
+Counter Output:Pulse:Idle State<br>
+Counter Output:Pulse:Output Terminal<br>
+Counter Output:Pulse:Time:Units<br>
+Counter Output:Pulse:Time:High Time<br>
+Counter Output:Pulse:Time:Low Time<br>
+Counter Output:Pulse:Time:Initial Delay<br>
+Counter Output:Pulse:Frequency:Duty Cycle<br>
+Counter Output:Pulse:Frequency:Units<br>
+Counter Output:Pulse:Frequency:Frequency<br>
+Counter Output:Pulse:Frequency:Initial Delay<br>
+Counter Output:Pulse:Ticks:High Ticks<br>
+Counter Output:Pulse:Ticks:Low Ticks<br>
+Counter Output:Pulse:Ticks:Initial Delay<br>
+Counter Output:General Properties/Attributes:Counter Timebase:Source<br>
+Counter Output:General Properties/Attributes:Counter Timebase:Rate<br>
+Counter Output:General Properties/Attributes:Counter Timebase:Active Edge<br>
+Counter Output:General Properties/Attributes:Counter Timebase:Digital Filter:Enable<br>
+Counter Output:General Properties/Attributes:Counter Timebase:Digital Filter:Minimum Pulse Width<br>
+Counter Output:General Properties/Attributes:Counter Timebase:Digital Filter:Timebase:Source<br>
+Counter Output:General Properties/Attributes:Counter Timebase:Digital Filter:Timebase:Rate<br>
+Counter Output:General Properties/Attributes:Counter Timebase:Digital Synchronization:Enable<br>
+Counter Output:General Properties/Attributes:More:Count<br>
+Counter Output:General Properties/Attributes:More:Output State<br>
+Counter Output:General Properties/Attributes:More:Auto Increment Count<br>
+Counter Output:General Properties/Attributes:More:Pulse Done<br>
+Counter Output:General Properties/Attributes:More:Advanced:Prescaler<br>
+</p>
+
+<h3>DAQmx Export Signal Properties/Attributes</h3>
+<p class="Body">
+Clocks:AI Convert Clock:Output Terminal<br>
+Clocks:Sample Clock:Output Behavior<br>
+Clocks:Sample Clock:Output Terminal<br>
+Triggers:Reference Trigger:Output Terminal<br>
+Triggers:Start Trigger:Output Terminal<br>
+Events:AI Hold Complete Event:Output Terminal<br>
+Events:AI Hold Complete Event:Pulse:Polarity<br>
+Events:Counter Output Event:Output Terminal<br>
+Events:Counter Output Event:Output Behavior<br>
+Events:Counter Output Event:Pulse:Polarity<br>
+Events:Counter Output Event:Toggle:Idle State<br>
+</p>
+
+<h3>DAQmx Read Properties/Attributes</h3>
+<p class="Body">
+RelativeTo<br>
+Offset<br>
+Channels to Read<br>
+Waveform Attributes<br>
+Read All Available Samples<br>
+Auto Start<br>
+Configure:OverWrite Mode<br>
+Status:Current Read Position<br>
+Status:Available Samples Per Channel<br>
+Status:Total Samples Per Channel Acquired<br>
+Advanced:Raw Data Width<br>
+Advanced:Number of Channels<br>
+Advanced:Digital Input:Number of Booleans Per Channel<br>
+Advanced:Wait Mode<br>
+</p>
+
+<h3>DAQmx Timing Properties/Attributes</h3>
+<p class="Body">
+Sample Quantity:Sample Mode<br>
+Sample Quantity:Samples Per Channel<br>
+Sample Timing Type<br>
+Sample Clock:Rate<br>
+Sample Clock:Source<br>
+Sample Clock:Active Edge<br>
+Sample Clock:Timebase Divisor<br>
+Sample Clock:Timebase:Rate<br>
+Sample Clock:Timebase:Source<br>
+Sample Clock:Timebase:Active Edge<br>
+Sample Clock:Digital Filter:Enable<br>
+Sample Clock:Digital Filter:Minimum Pulse Width<br>
+Sample Clock:Digital Filter:Timebase:Source<br>
+Sample Clock:Digital Filter:Timebase:Rate<br>
+Sample Clock:Digital Synchronization:Enable<br>
+More:AI Convert:Rate<br>
+More:AI Convert:Source<br>
+More:AI Convert:Active Edge<br>
+More:AI Convert:Timebase Divisor<br>
+More:AI Convert:Timebase:Source<br>
+More:Reference Clock:Rate<br>
+More:Reference Clock:Source<br>
+More:Delay From Sample Clock:Delay Units<br>
+More:Delay From Sample Clock:Delay<br>
+</p>
+
+<h3>DAQmx Trigger Properties/Attributes</h3>
+<p class="Body">
+Start:Trigger Type<br>
+Start:Digital Edge:Source<br>
+Start:Digital Edge:Edge<br>
+Start:Digital Edge:Digital Filter:Enable<br>
+Start:Digital Edge:Digital Filter:Minimum Pulse Width<br>
+Start:Digital Edge:Digital Filter:Timebase:Source<br>
+Start:Digital Edge:Digital Filter:Timebase:Rate<br>
+Start:Digital Edge:Digital Synchronization:Enable<br>
+Start:Analog Edge:Source<br>
+Start:Analog Edge:Slope<br>
+Start:Analog Edge:Level<br>
+Start:Analog Edge:Hysteresis<br>
+Start:Analog Window:Source<br>
+Start:Analog Window:Trigger When<br>
+Start:Analog Window:Top<br>
+Start:Analog Window:Bottom<br>
+Start:More:Delay<br>
+Start:More:Delay Units<br>
+Start:More:Retriggerable<br>
+Reference:Trigger Type<br>
+Reference:Pretrigger Samples per Channel<br>
+Reference:Digital Edge:Source<br>
+Reference:Digital Edge:Edge<br>
+Reference:Analog Edge:Source<br>
+Reference:Analog Edge:Slope<br>
+Reference:Analog Edge:Level<br>
+Reference:Analog Edge:Hysteresis<br>
+Reference:Analog Window:Source<br>
+Reference:Analog Window:Trigger When<br>
+Reference:Analog Window:Top<br>
+Reference:Analog Window:Bottom<br>
+More:Pause:Trigger Type<br>
+More:Pause:Analog Level:Source<br>
+More:Pause:Analog Level:Pause When<br>
+More:Pause:Analog Level:Level<br>
+More:Pause:Analog Level:Hysteresis<br>
+More:Pause:Analog Window:Source<br>
+More:Pause:Analog Window:Pause When<br>
+More:Pause:Analog Window:Top<br>
+More:Pause:Analog Window:Bottom<br>
+More:Pause:Digital Level:Source<br>
+More:Pause:Digital Level:Pause When<br>
+More:Pause:Digital Level:Digital Filter:Enable<br>
+More:Pause:Digital Level:Digital Filter:Minimum Pulse Width<br>
+More:Pause:Digital Level:Digital Filter:Timebase:Source<br>
+More:Pause:Digital Level:Digital Filter:Timebase:Rate<br>
+More:Pause:Digital Level:Digital Synchronization:Enable<br>
+More:Arm Start:Trigger Type<br>
+More:Arm Start:Digital Edge:Source<br>
+More:Arm Start:Digital Edge:Edge<br>
+More:Arm Start:Digital Edge:Digital Filter:Enable<br>
+More:Arm Start:Digital Edge:Digital Filter:Minimum Pulse Width<br>
+More:Arm Start:Digital Edge:Digital Filter:Timebase:Source<br>
+More:Arm Start:Digital Edge:Digital Filter:Timebase:Rate<br>
+More:Arm Start:Digital Edge:Digital Synchronization:Enable<br>
+</p>
+
+<h3>DAQmx Write Properties/Attributes</h3>
+<p class="Body">
+Relative To<br>
+Offset<br>
+Configure:Regeneration Mode<br>
+Status:Current Write Position<br>
+Status:Space Available in Buffer<br>
+Status:Total Samples Per Channel Generated<br>
+Advanced:Raw Data Width<br>
+Advanced:Number of Channels<br>
+Advanced:Digital Output:Number of Booleans Per Channel<br>
+</p>
+
+<h3>DAQmx Timing Source Properties/Attributes</h3>
+<p class="Body">
+Active Timing Source<br>
+Timing Source Type<br>
+Frequency:Counter<br>
+Frequency:Frequency<br>
+Digital Edge using Counter:Counter<br>
+Digital Edge using Counter:Edge<br>
+Digital Edge using Counter:Edge Count<br>
+Digital Edge using Counter:Terminal<br>
+Signal From Task:Signal<br>
+</p>
+
+<p class="Body"><a href="#apitop">Return to top</a></p>
+
+<a name="6280"></a><h2>NI 6280/6284 Supported Properties/Attributes</h2>
+
+<h3>DAQmx Calibration Info Properties/Attributes</h3>
+<p class="Body">
+Active Device<br>
+Self Calibration:Is Supported<br>
+Self Calibration:Last Self Calibration Date/Time<br>
+Self Calibration:Last Self Calibration Temperature<br>
+External Calibration:Recommended Interval<br>
+External Calibration:Last External Calibration Date/Time<br>
+External Calibration:Last External Calibration Temperature<br>
+User Defined Information:Information<br>
+User Defined Information:Max Size<br>
+More:Device Temperature<br>
+</p>
+
+<h3>DAQmx Channel Properties/Attributes</h3>
+<p class="Body">
+Active Channels<br>
+Channel Type<br>
+Physical Channel Name<br>
+Description<br>
+Analog Input:Maximum Value<br>
+Analog Input:Minimum Value<br>
+Analog Input:Custom Scale Name<br>
+Analog Input:Measurement Type<br>
+Analog Input:Voltage:Units<br>
+Analog Input:Temperature:Units<br>
+Analog Input:Temperature:Thermocouple:Type<br>
+Analog Input:Temperature:Thermocouple:CJC Source<br>
+Analog Input:Temperature:Thermocouple:CJC Value<br>
+Analog Input:Temperature:Thermocouple:CJC Channel<br>
+Analog Input:Current:Units<br>
+Analog Input:Strain:Units<br>
+Analog Input:Strain:Strain Gage:Gage Factor<br>
+Analog Input:Strain:Strain Gage:Poisson Ratio<br>
+Analog Input:Strain:Strain Gage:Configuration<br>
+Analog Input:Resistance:Units<br>
+Analog Input:TEDS:Units<br>
+Analog Input:General Properties/Attributes:Input Configuration:Terminal Configuration<br>
+Analog Input:General Properties/Attributes:Signal Conditioning:Lead Wire Resistance<br>
+Analog Input:General Properties/Attributes:Signal Conditioning:Bridge:Configuration<br>
+Analog Input:General Properties/Attributes:Signal Conditioning:Bridge:Nominal Resistance<br>
+Analog Input:General Properties/Attributes:Signal Conditioning:Bridge:Initial Bridge Voltage<br>
+Analog Input:General Properties/Attributes:Signal Conditioning:Current Shunt Resistor:Location<br>
+Analog Input:General Properties/Attributes:Signal Conditioning:Current Shunt Resistor:Value<br>
+Analog Input:General Properties/Attributes:Signal Conditioning:Excitation:Source<br>
+Analog Input:General Properties/Attributes:Signal Conditioning:Excitation:Value<br>
+Analog Input:General Properties/Attributes:Signal Conditioning:Excitation:Advanced:Use Excitation For Scaling<br>
+Analog Input:General Properties/Attributes:Signal Conditioning:Excitation:Advanced:Actual Excitation Value<br>
+Analog Input:General Properties/Attributes:Signal Conditioning:Excitation:Advanced:Voltage or Current<br>
+Analog Input:General Properties/Attributes:Filter:Analog Lowpass:Enable<br>
+Analog Input:General Properties/Attributes:Filter:Analog Lowpass:Cutoff Frequency<br>
+Analog Input:General Properties/Attributes:Digitizer/ADC:Resolution Units<br>
+Analog Input:General Properties/Attributes:Digitizer/ADC:Resolution Value<br>
+Analog Input:General Properties/Attributes:Digitizer/ADC:Dither:Enable<br>
+Analog Input:General Properties/Attributes:Advanced:Range:High<br>
+Analog Input:General Properties/Attributes:Advanced:Range:Low<br>
+Analog Input:General Properties/Attributes:Advanced:Data Transfer and Memory:Data Transfer Mechanism<br>
+Analog Input:General Properties/Attributes:Advanced:Data Transfer and Memory:Data Transfer Request Condition<br>
+Analog Input:General Properties/Attributes:Advanced:Data Transfer and Memory:Memory Mapping for Programmed IO Enable<br>
+Analog Input:General Properties/Attributes:Advanced:Device Scaling Coefficients:Device Scaling Coefficients<br>
+Digital Input:Invert Lines<br>
+Digital Input:Number of Lines<br>
+Digital Input:Tristate<br>
+Digital Input:General Properties/Attributes:Advanced:Data Transfer and Memory:Data Transfer Mechanism<br>
+Digital Input:General Properties/Attributes:Advanced:Data Transfer and Memory:Data Transfer Request Condition<br>
+Digital Output:Invert Lines<br>
+Digital Output:Number of Lines<br>
+Digital Output:Tristate<br>
+Digital Output:General Properties/Attributes:Advanced:Data Transfer and Memory:Use Only On Board Memory<br>
+Digital Output:General Properties/Attributes:Advanced:Data Transfer and Memory:Data Transfer Mechanism<br>
+Digital Output:General Properties/Attributes:Advanced:Data Transfer and Memory:Data Transfer Request Condition<br>
+Counter Input:Maximum Value<br>
+Counter Input:Minimum Value<br>
+Counter Input:Custom Scale Name<br>
+Counter Input:Measurement Type<br>
+Counter Input:Frequency:Units<br>
+Counter Input:Frequency:Input Terminal<br>
+Counter Input:Frequency:Starting Edge<br>
+Counter Input:Frequency:Measurement Specifications:Method<br>
+Counter Input:Frequency:Measurement Specifications:High Frequency:Measurement Time<br>
+Counter Input:Frequency:Measurement Specifications:Large Range:Divisor<br>
+Counter Input:Frequency:Digital Filter:Enable<br>
+Counter Input:Frequency:Digital Filter:Minimum Pulse Width<br>
+Counter Input:Frequency:Digital Filter:Timebase:Source<br>
+Counter Input:Frequency:Digital Filter:Timebase:Rate<br>
+Counter Input:Frequency:Digital Synchronization:Enable<br>
+Counter Input:Period:Units<br>
+Counter Input:Period:Input Terminal<br>
+Counter Input:Period:Starting Edge<br>
+Counter Input:Period:Measurement Specifications:Method<br>
+Counter Input:Period:Measurement Specifications:High Frequency:Measurement Time<br>
+Counter Input:Period:Measurement Specifications:Large Range:Divisor<br>
+Counter Input:Period:Digital Filter:Enable<br>
+Counter Input:Period:Digital Filter:Minimum Pulse Width<br>
+Counter Input:Period:Digital Filter:Timebase:Source<br>
+Counter Input:Period:Digital Filter:Timebase:Rate<br>
+Counter Input:Period:Digital Synchronization:Enable<br>
+Counter Input:Count Edges:Input Terminal<br>
+Counter Input:Count Edges:Count Direction:Direction<br>
+Counter Input:Count Edges:Count Direction:Terminal<br>
+Counter Input:Count Edges:Count Direction:Digital Filter:Enable<br>
+Counter Input:Count Edges:Count Direction:Digital Filter:Minimum Pulse Width<br>
+Counter Input:Count Edges:Count Direction:Digital Filter:Timebase:Source<br>
+Counter Input:Count Edges:Count Direction:Digital Filter:Timebase:Rate<br>
+Counter Input:Count Edges:Count Direction:Digital Synchronization:Enable<br>
+Counter Input:Count Edges:Initial Count<br>
+Counter Input:Count Edges:Active Edge<br>
+Counter Input:Count Edges:Digital Filter:Enable<br>
+Counter Input:Count Edges:Digital Filter:Minimum Pulse Width<br>
+Counter Input:Count Edges:Digital Filter:Timebase:Source<br>
+Counter Input:Count Edges:Digital Filter:Timebase:Rate<br>
+Counter Input:Count Edges:Digital Synchronization:Enable<br>
+Counter Input:Position:Angular Encoder:Units<br>
+Counter Input:Position:Angular Encoder:Pulses Per Revolution<br>
+Counter Input:Position:Angular Encoder:Initial Angle<br>
+Counter Input:Position:Linear Encoder:Units<br>
+Counter Input:Position:Linear Encoder:Distance Per Pulse<br>
+Counter Input:Position:Linear Encoder:Initial Position<br>
+Counter Input:Position:Decoding Type<br>
+Counter Input:Position:A Input:Terminal<br>
+Counter Input:Position:A Input:Digital Filter:Enable<br>
+Counter Input:Position:A Input:Digital Filter:Minimum Pulse Width<br>
+Counter Input:Position:A Input:Digital Filter:Timebase:Source<br>
+Counter Input:Position:A Input:Digital Filter:Timebase:Rate<br>
+Counter Input:Position:A Input:Digital Synchronization:Enable<br>
+Counter Input:Position:B Input:Terminal<br>
+Counter Input:Position:B Input:Digital Filter:Enable<br>
+Counter Input:Position:B Input:Digital Filter:Minimum Pulse Width<br>
+Counter Input:Position:B Input:Digital Filter:Timebase:Source<br>
+Counter Input:Position:B Input:Digital Filter:Timebase:Rate<br>
+Counter Input:Position:B Input:Digital Synchronization:Enable<br>
+Counter Input:Position:Z Input:Terminal<br>
+Counter Input:Position:Z Input:Digital Filter:Enable<br>
+Counter Input:Position:Z Input:Digital Filter:Minimum Pulse Width<br>
+Counter Input:Position:Z Input:Digital Filter:Timebase:Source<br>
+Counter Input:Position:Z Input:Digital Filter:Timebase:Rate<br>
+Counter Input:Position:Z Input:Digital Synchronization:Enable<br>
+Counter Input:Position:Z Index Enable<br>
+Counter Input:Position:Z Index Value<br>
+Counter Input:Position:Z Index Phase<br>
+Counter Input:Pulse Width:Units<br>
+Counter Input:Pulse Width:Input Terminal<br>
+Counter Input:Pulse Width:Starting Edge<br>
+Counter Input:Pulse Width:Digital Filter:Enable<br>
+Counter Input:Pulse Width:Digital Filter:Minimum Pulse Width<br>
+Counter Input:Pulse Width:Digital Filter:Timebase:Source<br>
+Counter Input:Pulse Width:Digital Filter:Timebase:Rate<br>
+Counter Input:Pulse Width:Digital Synchronization:Enable<br>
+Counter Input:Two Edge Separation:Units<br>
+Counter Input:Two Edge Separation:First:Input Terminal<br>
+Counter Input:Two Edge Separation:First:Edge<br>
+Counter Input:Two Edge Separation:First:Digital Filter:Enable<br>
+Counter Input:Two Edge Separation:First:Digital Filter:Minimum Pulse Width<br>
+Counter Input:Two Edge Separation:First:Digital Filter:Timebase:Source<br>
+Counter Input:Two Edge Separation:First:Digital Filter:Timebase:Rate<br>
+Counter Input:Two Edge Separation:First:Digital Synchronization:Enable<br>
+Counter Input:Two Edge Separation:Second:Input Terminal<br>
+Counter Input:Two Edge Separation:Second:Edge<br>
+Counter Input:Two Edge Separation:Second:Digital Filter:Enable<br>
+Counter Input:Two Edge Separation:Second:Digital Filter:Minimum Pulse Width<br>
+Counter Input:Two Edge Separation:Second:Digital Filter:Timebase:Source<br>
+Counter Input:Two Edge Separation:Second:Digital Filter:Timebase:Rate<br>
+Counter Input:Two Edge Separation:Second:Digital Synchronization:Enable<br>
+Counter Input:Semi-Period:Units<br>
+Counter Input:Semi-Period:Input Terminal<br>
+Counter Input:Semi-Period:Digital Filter:Enable<br>
+Counter Input:Semi-Period:Digital Filter:Minimum Pulse Width<br>
+Counter Input:Semi-Period:Digital Filter:Timebase:Source<br>
+Counter Input:Semi-Period:Digital Filter:Timebase:Rate<br>
+Counter Input:Semi-Period:Digital Synchronization:Enable<br>
+Counter Input:General Properties/Attributes:Counter Timebase:Source<br>
+Counter Input:General Properties/Attributes:Counter Timebase:Rate<br>
+Counter Input:General Properties/Attributes:Counter Timebase:Active Edge<br>
+Counter Input:General Properties/Attributes:Counter Timebase:Digital Filter:Enable<br>
+Counter Input:General Properties/Attributes:Counter Timebase:Digital Filter:Minimum Pulse Width<br>
+Counter Input:General Properties/Attributes:Counter Timebase:Digital Filter:Timebase:Source<br>
+Counter Input:General Properties/Attributes:Counter Timebase:Digital Filter:Timebase:Rate<br>
+Counter Input:General Properties/Attributes:Counter Timebase:Digital Synchronization:Enable<br>
+Counter Input:General Properties/Attributes:More:Count<br>
+Counter Input:General Properties/Attributes:More:Output State<br>
+Counter Input:General Properties/Attributes:More:Terminal Count Reached<br>
+Counter Input:General Properties/Attributes:More:Advanced:Data Transfer and Memory:Data Transfer Mechanism<br>
+Counter Input:General Properties/Attributes:More:Advanced:Duplicate Count Prevention<br>
+Counter Input:General Properties/Attributes:More:Advanced:Prescaler<br>
+Counter Output:Output Type<br>
+Counter Output:Pulse:Idle State<br>
+Counter Output:Pulse:Output Terminal<br>
+Counter Output:Pulse:Time:Units<br>
+Counter Output:Pulse:Time:High Time<br>
+Counter Output:Pulse:Time:Low Time<br>
+Counter Output:Pulse:Time:Initial Delay<br>
+Counter Output:Pulse:Frequency:Duty Cycle<br>
+Counter Output:Pulse:Frequency:Units<br>
+Counter Output:Pulse:Frequency:Frequency<br>
+Counter Output:Pulse:Frequency:Initial Delay<br>
+Counter Output:Pulse:Ticks:High Ticks<br>
+Counter Output:Pulse:Ticks:Low Ticks<br>
+Counter Output:Pulse:Ticks:Initial Delay<br>
+Counter Output:General Properties/Attributes:Counter Timebase:Source<br>
+Counter Output:General Properties/Attributes:Counter Timebase:Rate<br>
+Counter Output:General Properties/Attributes:Counter Timebase:Active Edge<br>
+Counter Output:General Properties/Attributes:Counter Timebase:Digital Filter:Enable<br>
+Counter Output:General Properties/Attributes:Counter Timebase:Digital Filter:Minimum Pulse Width<br>
+Counter Output:General Properties/Attributes:Counter Timebase:Digital Filter:Timebase:Source<br>
+Counter Output:General Properties/Attributes:Counter Timebase:Digital Filter:Timebase:Rate<br>
+Counter Output:General Properties/Attributes:Counter Timebase:Digital Synchronization:Enable<br>
+Counter Output:General Properties/Attributes:More:Count<br>
+Counter Output:General Properties/Attributes:More:Output State<br>
+Counter Output:General Properties/Attributes:More:Auto Increment Count<br>
+Counter Output:General Properties/Attributes:More:Pulse Done<br>
+Counter Output:General Properties/Attributes:More:Advanced:Prescaler<br>
+</p>
+
+<h3>DAQmx Export Signal Properties/Attributes</h3>
+<p class="Body">
+Clocks:AI Convert Clock:Output Terminal<br>
+Clocks:Sample Clock:Output Behavior<br>
+Clocks:Sample Clock:Output Terminal<br>
+Triggers:Reference Trigger:Output Terminal<br>
+Triggers:Start Trigger:Output Terminal<br>
+Events:AI Hold Complete Event:Output Terminal<br>
+Events:AI Hold Complete Event:Pulse:Polarity<br>
+Events:Counter Output Event:Output Terminal<br>
+Events:Counter Output Event:Output Behavior<br>
+Events:Counter Output Event:Pulse:Polarity<br>
+Events:Counter Output Event:Toggle:Idle State<br>
+</p>
+
+<h3>DAQmx Read Properties/Attributes</h3>
+<p class="Body">
+RelativeTo<br>
+Offset<br>
+Channels to Read<br>
+Waveform Attributes<br>
+Read All Available Samples<br>
+Auto Start<br>
+Configure:OverWrite Mode<br>
+Status:Current Read Position<br>
+Status:Available Samples Per Channel<br>
+Status:Total Samples Per Channel Acquired<br>
+Advanced:Raw Data Width<br>
+Advanced:Number of Channels<br>
+Advanced:Digital Input:Number of Booleans Per Channel<br>
+Advanced:Wait Mode<br>
+</p>
+
+<h3>DAQmx Timing Properties/Attributes</h3>
+<p class="Body">
+Sample Quantity:Sample Mode<br>
+Sample Quantity:Samples Per Channel<br>
+Sample Timing Type<br>
+Sample Clock:Rate<br>
+Sample Clock:Source<br>
+Sample Clock:Active Edge<br>
+Sample Clock:Timebase Divisor<br>
+Sample Clock:Timebase:Rate<br>
+Sample Clock:Timebase:Source<br>
+Sample Clock:Timebase:Active Edge<br>
+Sample Clock:Digital Filter:Enable<br>
+Sample Clock:Digital Filter:Minimum Pulse Width<br>
+Sample Clock:Digital Filter:Timebase:Source<br>
+Sample Clock:Digital Filter:Timebase:Rate<br>
+Sample Clock:Digital Synchronization:Enable<br>
+More:AI Convert:Rate<br>
+More:AI Convert:Source<br>
+More:AI Convert:Active Edge<br>
+More:AI Convert:Timebase Divisor<br>
+More:AI Convert:Timebase:Source<br>
+More:Reference Clock:Rate<br>
+More:Reference Clock:Source<br>
+More:Delay From Sample Clock:Delay Units<br>
+More:Delay From Sample Clock:Delay<br>
+</p>
+
+<h3>DAQmx Trigger Properties/Attributes</h3>
+<p class="Body">
+Start:Trigger Type<br>
+Start:Digital Edge:Source<br>
+Start:Digital Edge:Edge<br>
+Start:Digital Edge:Digital Filter:Enable<br>
+Start:Digital Edge:Digital Filter:Minimum Pulse Width<br>
+Start:Digital Edge:Digital Filter:Timebase:Source<br>
+Start:Digital Edge:Digital Filter:Timebase:Rate<br>
+Start:Digital Edge:Digital Synchronization:Enable<br>
+Start:Analog Edge:Source<br>
+Start:Analog Edge:Slope<br>
+Start:Analog Edge:Level<br>
+Start:Analog Edge:Hysteresis<br>
+Start:Analog Window:Source<br>
+Start:Analog Window:Trigger When<br>
+Start:Analog Window:Top<br>
+Start:Analog Window:Bottom<br>
+Start:More:Delay<br>
+Start:More:Delay Units<br>
+Start:More:Retriggerable<br>
+Reference:Trigger Type<br>
+Reference:Pretrigger Samples per Channel<br>
+Reference:Digital Edge:Source<br>
+Reference:Digital Edge:Edge<br>
+Reference:Analog Edge:Source<br>
+Reference:Analog Edge:Slope<br>
+Reference:Analog Edge:Level<br>
+Reference:Analog Edge:Hysteresis<br>
+Reference:Analog Window:Source<br>
+Reference:Analog Window:Trigger When<br>
+Reference:Analog Window:Top<br>
+Reference:Analog Window:Bottom<br>
+More:Pause:Trigger Type<br>
+More:Pause:Analog Level:Source<br>
+More:Pause:Analog Level:Pause When<br>
+More:Pause:Analog Level:Level<br>
+More:Pause:Analog Level:Hysteresis<br>
+More:Pause:Analog Window:Source<br>
+More:Pause:Analog Window:Pause When<br>
+More:Pause:Analog Window:Top<br>
+More:Pause:Analog Window:Bottom<br>
+More:Pause:Digital Level:Source<br>
+More:Pause:Digital Level:Pause When<br>
+More:Pause:Digital Level:Digital Filter:Enable<br>
+More:Pause:Digital Level:Digital Filter:Minimum Pulse Width<br>
+More:Pause:Digital Level:Digital Filter:Timebase:Source<br>
+More:Pause:Digital Level:Digital Filter:Timebase:Rate<br>
+More:Pause:Digital Level:Digital Synchronization:Enable<br>
+More:Arm Start:Trigger Type<br>
+More:Arm Start:Digital Edge:Source<br>
+More:Arm Start:Digital Edge:Edge<br>
+More:Arm Start:Digital Edge:Digital Filter:Enable<br>
+More:Arm Start:Digital Edge:Digital Filter:Minimum Pulse Width<br>
+More:Arm Start:Digital Edge:Digital Filter:Timebase:Source<br>
+More:Arm Start:Digital Edge:Digital Filter:Timebase:Rate<br>
+More:Arm Start:Digital Edge:Digital Synchronization:Enable<br>
+</p>
+
+<h3>DAQmx Write Properties/Attributes</h3>
+<p class="Body">
+Relative To<br>
+Offset<br>
+Configure:Regeneration Mode<br>
+Status:Current Write Position<br>
+Status:Space Available in Buffer<br>
+Status:Total Samples Per Channel Generated<br>
+Advanced:Raw Data Width<br>
+Advanced:Number of Channels<br>
+Advanced:Digital Output:Number of Booleans Per Channel<br>
+</p>
+
+<h3>DAQmx Timing Source Properties/Attributes</h3>
+<p class="Body">
+Active Timing Source<br>
+Timing Source Type<br>
+Frequency:Counter<br>
+Frequency:Frequency<br>
+Digital Edge using Counter:Counter<br>
+Digital Edge using Counter:Edge<br>
+Digital Edge using Counter:Edge Count<br>
+Digital Edge using Counter:Terminal<br>
+Signal From Task:Signal<br>
+</p>
+
+<p class="Body"><a href="#apitop">Return to top</a></p>
+
+<a name="6221"></a><h2>NI 6221/6229 Supported Properties/Attributes</h2>
+
+<h3>DAQmx Calibration Info Properties/Attributes</h3>
+<p class="Body">
+Active Device<br>
+Self Calibration:Is Supported<br>
+Self Calibration:Last Self Calibration Date/Time<br>
+Self Calibration:Last Self Calibration Temperature<br>
+External Calibration:Recommended Interval<br>
+External Calibration:Last External Calibration Date/Time<br>
+External Calibration:Last External Calibration Temperature<br>
+User Defined Information:Information<br>
+User Defined Information:Max Size<br>
+More:Device Temperature<br>
+</p>
+
+<h3>DAQmx Channel Properties/Attributes</h3>
+<p class="Body">
+Active Channels<br>
+Channel Type<br>
+Physical Channel Name<br>
+Description<br>
+Analog Input:Maximum Value<br>
+Analog Input:Minimum Value<br>
+Analog Input:Custom Scale Name<br>
+Analog Input:Measurement Type<br>
+Analog Input:Voltage:Units<br>
+Analog Input:Temperature:Units<br>
+Analog Input:Temperature:Thermocouple:Type<br>
+Analog Input:Temperature:Thermocouple:CJC Source<br>
+Analog Input:Temperature:Thermocouple:CJC Value<br>
+Analog Input:Temperature:Thermocouple:CJC Channel<br>
+Analog Input:Current:Units<br>
+Analog Input:Strain:Units<br>
+Analog Input:Strain:Strain Gage:Gage Factor<br>
+Analog Input:Strain:Strain Gage:Poisson Ratio<br>
+Analog Input:Strain:Strain Gage:Configuration<br>
+Analog Input:Resistance:Units<br>
+Analog Input:TEDS:Units<br>
+Analog Input:General Properties/Attributes:Input Configuration:Terminal Configuration<br>
+Analog Input:General Properties/Attributes:Signal Conditioning:Lead Wire Resistance<br>
+Analog Input:General Properties/Attributes:Signal Conditioning:Bridge:Configuration<br>
+Analog Input:General Properties/Attributes:Signal Conditioning:Bridge:Nominal Resistance<br>
+Analog Input:General Properties/Attributes:Signal Conditioning:Bridge:Initial Bridge Voltage<br>
+Analog Input:General Properties/Attributes:Signal Conditioning:Current Shunt Resistor:Location<br>
+Analog Input:General Properties/Attributes:Signal Conditioning:Current Shunt Resistor:Value<br>
+Analog Input:General Properties/Attributes:Signal Conditioning:Excitation:Source<br>
+Analog Input:General Properties/Attributes:Signal Conditioning:Excitation:Value<br>
+Analog Input:General Properties/Attributes:Signal Conditioning:Excitation:Advanced:Use Excitation For Scaling<br>
+Analog Input:General Properties/Attributes:Signal Conditioning:Excitation:Advanced:Actual Excitation Value<br>
+Analog Input:General Properties/Attributes:Signal Conditioning:Excitation:Advanced:Voltage or Current<br>
+Analog Input:General Properties/Attributes:Digitizer/ADC:Resolution Units<br>
+Analog Input:General Properties/Attributes:Digitizer/ADC:Resolution Value<br>
+Analog Input:General Properties/Attributes:Digitizer/ADC:Dither:Enable<br>
+Analog Input:General Properties/Attributes:Advanced:Range:High<br>
+Analog Input:General Properties/Attributes:Advanced:Range:Low<br>
+Analog Input:General Properties/Attributes:Advanced:Data Transfer and Memory:Data Transfer Mechanism<br>
+Analog Input:General Properties/Attributes:Advanced:Data Transfer and Memory:Data Transfer Request Condition<br>
+Analog Input:General Properties/Attributes:Advanced:Data Transfer and Memory:Memory Mapping for Programmed IO Enable<br>
+Analog Input:General Properties/Attributes:Advanced:Device Scaling Coefficients:Device Scaling Coefficients<br>
+Analog Output:Maximum Value<br>
+Analog Output:Minimum Value<br>
+Analog Output:Custom Scale Name<br>
+Analog Output:Output Type<br>
+Analog Output:Voltage:Units<br>
+Analog Output:General Properties/Attributes:Output Configuration:Terminal Configuration<br>
+Analog Output:General Properties/Attributes:DAC:Resolution Units<br>
+Analog Output:General Properties/Attributes:DAC:Resolution Value<br>
+Analog Output:General Properties/Attributes:DAC:Range:High<br>
+Analog Output:General Properties/Attributes:DAC:Range:Low<br>
+Analog Output:General Properties/Attributes:DAC:Reference Voltage:Connect DAC Reference to Ground<br>
+Analog Output:General Properties/Attributes:DAC:Reference Voltage:Allow Connecting DAC Reference to Ground at Runtime<br>
+Analog Output:General Properties/Attributes:DAC:Reference Voltage:Source<br>
+Analog Output:General Properties/Attributes:DAC:Reference Voltage:Value<br>
+Analog Output:General Properties/Attributes:DAC:Reglitching Enable<br>
+Analog Output:General Properties/Attributes:Advanced:Data Transfer and Memory:Use Only On Board Memory<br>
+Analog Output:General Properties/Attributes:Advanced:Data Transfer and Memory:Data Transfer Mechanism<br>
+Analog Output:General Properties/Attributes:Advanced:Data Transfer and Memory:Data Transfer Request Condition<br>
+Analog Output:General Properties/Attributes:Advanced:Data Transfer and Memory:Memory Mapping for Programmed IO Enable<br>
+Analog Output:General Properties/Attributes:Advanced:Device Scaling Coefficients:Device Scaling Coefficients<br>
+Digital Input:Invert Lines<br>
+Digital Input:Number of Lines<br>
+Digital Input:Tristate<br>
+Digital Input:General Properties/Attributes:Advanced:Data Transfer and Memory:Data Transfer Mechanism<br>
+Digital Input:General Properties/Attributes:Advanced:Data Transfer and Memory:Data Transfer Request Condition<br>
+Digital Output:Invert Lines<br>
+Digital Output:Number of Lines<br>
+Digital Output:Tristate<br>
+Digital Output:General Properties/Attributes:Advanced:Data Transfer and Memory:Use Only On Board Memory<br>
+Digital Output:General Properties/Attributes:Advanced:Data Transfer and Memory:Data Transfer Mechanism<br>
+Digital Output:General Properties/Attributes:Advanced:Data Transfer and Memory:Data Transfer Request Condition<br>
+Counter Input:Maximum Value<br>
+Counter Input:Minimum Value<br>
+Counter Input:Custom Scale Name<br>
+Counter Input:Measurement Type<br>
+Counter Input:Frequency:Units<br>
+Counter Input:Frequency:Input Terminal<br>
+Counter Input:Frequency:Starting Edge<br>
+Counter Input:Frequency:Measurement Specifications:Method<br>
+Counter Input:Frequency:Measurement Specifications:High Frequency:Measurement Time<br>
+Counter Input:Frequency:Measurement Specifications:Large Range:Divisor<br>
+Counter Input:Frequency:Digital Filter:Enable<br>
+Counter Input:Frequency:Digital Filter:Minimum Pulse Width<br>
+Counter Input:Frequency:Digital Filter:Timebase:Source<br>
+Counter Input:Frequency:Digital Filter:Timebase:Rate<br>
+Counter Input:Frequency:Digital Synchronization:Enable<br>
+Counter Input:Period:Units<br>
+Counter Input:Period:Input Terminal<br>
+Counter Input:Period:Starting Edge<br>
+Counter Input:Period:Measurement Specifications:Method<br>
+Counter Input:Period:Measurement Specifications:High Frequency:Measurement Time<br>
+Counter Input:Period:Measurement Specifications:Large Range:Divisor<br>
+Counter Input:Period:Digital Filter:Enable<br>
+Counter Input:Period:Digital Filter:Minimum Pulse Width<br>
+Counter Input:Period:Digital Filter:Timebase:Source<br>
+Counter Input:Period:Digital Filter:Timebase:Rate<br>
+Counter Input:Period:Digital Synchronization:Enable<br>
+Counter Input:Count Edges:Input Terminal<br>
+Counter Input:Count Edges:Count Direction:Direction<br>
+Counter Input:Count Edges:Count Direction:Terminal<br>
+Counter Input:Count Edges:Count Direction:Digital Filter:Enable<br>
+Counter Input:Count Edges:Count Direction:Digital Filter:Minimum Pulse Width<br>
+Counter Input:Count Edges:Count Direction:Digital Filter:Timebase:Source<br>
+Counter Input:Count Edges:Count Direction:Digital Filter:Timebase:Rate<br>
+Counter Input:Count Edges:Count Direction:Digital Synchronization:Enable<br>
+Counter Input:Count Edges:Initial Count<br>
+Counter Input:Count Edges:Active Edge<br>
+Counter Input:Count Edges:Digital Filter:Enable<br>
+Counter Input:Count Edges:Digital Filter:Minimum Pulse Width<br>
+Counter Input:Count Edges:Digital Filter:Timebase:Source<br>
+Counter Input:Count Edges:Digital Filter:Timebase:Rate<br>
+Counter Input:Count Edges:Digital Synchronization:Enable<br>
+Counter Input:Position:Angular Encoder:Units<br>
+Counter Input:Position:Angular Encoder:Pulses Per Revolution<br>
+Counter Input:Position:Angular Encoder:Initial Angle<br>
+Counter Input:Position:Linear Encoder:Units<br>
+Counter Input:Position:Linear Encoder:Distance Per Pulse<br>
+Counter Input:Position:Linear Encoder:Initial Position<br>
+Counter Input:Position:Decoding Type<br>
+Counter Input:Position:A Input:Terminal<br>
+Counter Input:Position:A Input:Digital Filter:Enable<br>
+Counter Input:Position:A Input:Digital Filter:Minimum Pulse Width<br>
+Counter Input:Position:A Input:Digital Filter:Timebase:Source<br>
+Counter Input:Position:A Input:Digital Filter:Timebase:Rate<br>
+Counter Input:Position:A Input:Digital Synchronization:Enable<br>
+Counter Input:Position:B Input:Terminal<br>
+Counter Input:Position:B Input:Digital Filter:Enable<br>
+Counter Input:Position:B Input:Digital Filter:Minimum Pulse Width<br>
+Counter Input:Position:B Input:Digital Filter:Timebase:Source<br>
+Counter Input:Position:B Input:Digital Filter:Timebase:Rate<br>
+Counter Input:Position:B Input:Digital Synchronization:Enable<br>
+Counter Input:Position:Z Input:Terminal<br>
+Counter Input:Position:Z Input:Digital Filter:Enable<br>
+Counter Input:Position:Z Input:Digital Filter:Minimum Pulse Width<br>
+Counter Input:Position:Z Input:Digital Filter:Timebase:Source<br>
+Counter Input:Position:Z Input:Digital Filter:Timebase:Rate<br>
+Counter Input:Position:Z Input:Digital Synchronization:Enable<br>
+Counter Input:Position:Z Index Enable<br>
+Counter Input:Position:Z Index Value<br>
+Counter Input:Position:Z Index Phase<br>
+Counter Input:Pulse Width:Units<br>
+Counter Input:Pulse Width:Input Terminal<br>
+Counter Input:Pulse Width:Starting Edge<br>
+Counter Input:Pulse Width:Digital Filter:Enable<br>
+Counter Input:Pulse Width:Digital Filter:Minimum Pulse Width<br>
+Counter Input:Pulse Width:Digital Filter:Timebase:Source<br>
+Counter Input:Pulse Width:Digital Filter:Timebase:Rate<br>
+Counter Input:Pulse Width:Digital Synchronization:Enable<br>
+Counter Input:Two Edge Separation:Units<br>
+Counter Input:Two Edge Separation:First:Input Terminal<br>
+Counter Input:Two Edge Separation:First:Edge<br>
+Counter Input:Two Edge Separation:First:Digital Filter:Enable<br>
+Counter Input:Two Edge Separation:First:Digital Filter:Minimum Pulse Width<br>
+Counter Input:Two Edge Separation:First:Digital Filter:Timebase:Source<br>
+Counter Input:Two Edge Separation:First:Digital Filter:Timebase:Rate<br>
+Counter Input:Two Edge Separation:First:Digital Synchronization:Enable<br>
+Counter Input:Two Edge Separation:Second:Input Terminal<br>
+Counter Input:Two Edge Separation:Second:Edge<br>
+Counter Input:Two Edge Separation:Second:Digital Filter:Enable<br>
+Counter Input:Two Edge Separation:Second:Digital Filter:Minimum Pulse Width<br>
+Counter Input:Two Edge Separation:Second:Digital Filter:Timebase:Source<br>
+Counter Input:Two Edge Separation:Second:Digital Filter:Timebase:Rate<br>
+Counter Input:Two Edge Separation:Second:Digital Synchronization:Enable<br>
+Counter Input:Semi-Period:Units<br>
+Counter Input:Semi-Period:Input Terminal<br>
+Counter Input:Semi-Period:Digital Filter:Enable<br>
+Counter Input:Semi-Period:Digital Filter:Minimum Pulse Width<br>
+Counter Input:Semi-Period:Digital Filter:Timebase:Source<br>
+Counter Input:Semi-Period:Digital Filter:Timebase:Rate<br>
+Counter Input:Semi-Period:Digital Synchronization:Enable<br>
+Counter Input:General Properties/Attributes:Counter Timebase:Source<br>
+Counter Input:General Properties/Attributes:Counter Timebase:Rate<br>
+Counter Input:General Properties/Attributes:Counter Timebase:Active Edge<br>
+Counter Input:General Properties/Attributes:Counter Timebase:Digital Filter:Enable<br>
+Counter Input:General Properties/Attributes:Counter Timebase:Digital Filter:Minimum Pulse Width<br>
+Counter Input:General Properties/Attributes:Counter Timebase:Digital Filter:Timebase:Source<br>
+Counter Input:General Properties/Attributes:Counter Timebase:Digital Filter:Timebase:Rate<br>
+Counter Input:General Properties/Attributes:Counter Timebase:Digital Synchronization:Enable<br>
+Counter Input:General Properties/Attributes:More:Count<br>
+Counter Input:General Properties/Attributes:More:Output State<br>
+Counter Input:General Properties/Attributes:More:Terminal Count Reached<br>
+Counter Input:General Properties/Attributes:More:Advanced:Data Transfer and Memory:Data Transfer Mechanism<br>
+Counter Input:General Properties/Attributes:More:Advanced:Duplicate Count Prevention<br>
+Counter Input:General Properties/Attributes:More:Advanced:Prescaler<br>
+Counter Output:Output Type<br>
+Counter Output:Pulse:Idle State<br>
+Counter Output:Pulse:Output Terminal<br>
+Counter Output:Pulse:Time:Units<br>
+Counter Output:Pulse:Time:High Time<br>
+Counter Output:Pulse:Time:Low Time<br>
+Counter Output:Pulse:Time:Initial Delay<br>
+Counter Output:Pulse:Frequency:Duty Cycle<br>
+Counter Output:Pulse:Frequency:Units<br>
+Counter Output:Pulse:Frequency:Frequency<br>
+Counter Output:Pulse:Frequency:Initial Delay<br>
+Counter Output:Pulse:Ticks:High Ticks<br>
+Counter Output:Pulse:Ticks:Low Ticks<br>
+Counter Output:Pulse:Ticks:Initial Delay<br>
+Counter Output:General Properties/Attributes:Counter Timebase:Source<br>
+Counter Output:General Properties/Attributes:Counter Timebase:Rate<br>
+Counter Output:General Properties/Attributes:Counter Timebase:Active Edge<br>
+Counter Output:General Properties/Attributes:Counter Timebase:Digital Filter:Enable<br>
+Counter Output:General Properties/Attributes:Counter Timebase:Digital Filter:Minimum Pulse Width<br>
+Counter Output:General Properties/Attributes:Counter Timebase:Digital Filter:Timebase:Source<br>
+Counter Output:General Properties/Attributes:Counter Timebase:Digital Filter:Timebase:Rate<br>
+Counter Output:General Properties/Attributes:Counter Timebase:Digital Synchronization:Enable<br>
+Counter Output:General Properties/Attributes:More:Count<br>
+Counter Output:General Properties/Attributes:More:Output State<br>
+Counter Output:General Properties/Attributes:More:Auto Increment Count<br>
+Counter Output:General Properties/Attributes:More:Pulse Done<br>
+Counter Output:General Properties/Attributes:More:Advanced:Prescaler<br>
+</p>
+
+<h3>DAQmx Export Signal Properties/Attributes</h3>
+<p class="Body">
+Clocks:AI Convert Clock:Output Terminal<br>
+Clocks:Sample Clock:Output Behavior<br>
+Clocks:Sample Clock:Output Terminal<br>
+Triggers:Reference Trigger:Output Terminal<br>
+Triggers:Start Trigger:Output Terminal<br>
+Events:AI Hold Complete Event:Output Terminal<br>
+Events:AI Hold Complete Event:Pulse:Polarity<br>
+Events:Counter Output Event:Output Terminal<br>
+Events:Counter Output Event:Output Behavior<br>
+Events:Counter Output Event:Pulse:Polarity<br>
+Events:Counter Output Event:Toggle:Idle State<br>
+</p>
+
+<h3>DAQmx Read Properties/Attributes</h3>
+<p class="Body">
+RelativeTo<br>
+Offset<br>
+Channels to Read<br>
+Waveform Attributes<br>
+Read All Available Samples<br>
+Auto Start<br>
+Configure:OverWrite Mode<br>
+Status:Current Read Position<br>
+Status:Available Samples Per Channel<br>
+Status:Total Samples Per Channel Acquired<br>
+Advanced:Raw Data Width<br>
+Advanced:Number of Channels<br>
+Advanced:Digital Input:Number of Booleans Per Channel<br>
+Advanced:Wait Mode<br>
+</p>
+
+<h3>DAQmx Timing Properties/Attributes</h3>
+<p class="Body">
+Sample Quantity:Sample Mode<br>
+Sample Quantity:Samples Per Channel<br>
+Sample Timing Type<br>
+Sample Clock:Rate<br>
+Sample Clock:Source<br>
+Sample Clock:Active Edge<br>
+Sample Clock:Timebase Divisor<br>
+Sample Clock:Timebase:Rate<br>
+Sample Clock:Timebase:Source<br>
+Sample Clock:Timebase:Active Edge<br>
+Sample Clock:Digital Filter:Enable<br>
+Sample Clock:Digital Filter:Minimum Pulse Width<br>
+Sample Clock:Digital Filter:Timebase:Source<br>
+Sample Clock:Digital Filter:Timebase:Rate<br>
+Sample Clock:Digital Synchronization:Enable<br>
+On Demand:Simultaneous Analog Output Enable<br>
+More:AI Convert:Rate<br>
+More:AI Convert:Source<br>
+More:AI Convert:Active Edge<br>
+More:AI Convert:Timebase Divisor<br>
+More:AI Convert:Timebase:Source<br>
+More:Reference Clock:Rate<br>
+More:Reference Clock:Source<br>
+More:Delay From Sample Clock:Delay Units<br>
+More:Delay From Sample Clock:Delay<br>
+</p>
+
+<h3>DAQmx Trigger Properties/Attributes</h3>
+<p class="Body">
+Start:Trigger Type<br>
+Start:Digital Edge:Source<br>
+Start:Digital Edge:Edge<br>
+Start:Digital Edge:Digital Filter:Enable<br>
+Start:Digital Edge:Digital Filter:Minimum Pulse Width<br>
+Start:Digital Edge:Digital Filter:Timebase:Source<br>
+Start:Digital Edge:Digital Filter:Timebase:Rate<br>
+Start:Digital Edge:Digital Synchronization:Enable<br>
+Start:More:Delay<br>
+Start:More:Delay Units<br>
+Start:More:Retriggerable<br>
+Reference:Trigger Type<br>
+Reference:Pretrigger Samples per Channel<br>
+Reference:Digital Edge:Source<br>
+Reference:Digital Edge:Edge<br>
+More:Pause:Trigger Type<br>
+More:Pause:Digital Level:Source<br>
+More:Pause:Digital Level:Pause When<br>
+More:Pause:Digital Level:Digital Filter:Enable<br>
+More:Pause:Digital Level:Digital Filter:Minimum Pulse Width<br>
+More:Pause:Digital Level:Digital Filter:Timebase:Source<br>
+More:Pause:Digital Level:Digital Filter:Timebase:Rate<br>
+More:Pause:Digital Level:Digital Synchronization:Enable<br>
+More:Arm Start:Trigger Type<br>
+More:Arm Start:Digital Edge:Source<br>
+More:Arm Start:Digital Edge:Edge<br>
+More:Arm Start:Digital Edge:Digital Filter:Enable<br>
+More:Arm Start:Digital Edge:Digital Filter:Minimum Pulse Width<br>
+More:Arm Start:Digital Edge:Digital Filter:Timebase:Source<br>
+More:Arm Start:Digital Edge:Digital Filter:Timebase:Rate<br>
+More:Arm Start:Digital Edge:Digital Synchronization:Enable<br>
+</p>
+
+<h3>DAQmx Write Properties/Attributes</h3>
+<p class="Body">
+Relative To<br>
+Offset<br>
+Configure:Regeneration Mode<br>
+Status:Current Write Position<br>
+Status:Space Available in Buffer<br>
+Status:Total Samples Per Channel Generated<br>
+Advanced:Raw Data Width<br>
+Advanced:Number of Channels<br>
+Advanced:Digital Output:Number of Booleans Per Channel<br>
+</p>
+
+<h3>DAQmx Timing Source Properties/Attributes</h3>
+<p class="Body">
+Active Timing Source<br>
+Timing Source Type<br>
+Frequency:Counter<br>
+Frequency:Frequency<br>
+Digital Edge using Counter:Counter<br>
+Digital Edge using Counter:Edge<br>
+Digital Edge using Counter:Edge Count<br>
+Digital Edge using Counter:Terminal<br>
+Signal From Task:Signal<br>
+</p>
+
+<p class="Body"><a href="#apitop">Return to top</a></p>
+
+<a name="6251"></a>
+<h2>NI 6251/6259 Supported Properties/Attributes</h2>
+
+<h3>DAQmx Calibration Info Properties/Attributes</h3>
+<p class="Body">
+Active Device<br>
+Self Calibration:Is Supported<br>
+Self Calibration:Last Self Calibration Date/Time<br>
+Self Calibration:Last Self Calibration Temperature<br>
+External Calibration:Recommended Interval<br>
+External Calibration:Last External Calibration Date/Time<br>
+External Calibration:Last External Calibration Temperature<br>
+User Defined Information:Information<br>
+User Defined Information:Max Size<br>
+More:Device Temperature<br>
+</p>
+
+<h3>DAQmx Channel Properties/Attributes</h3>
+<p class="Body">
+Active Channels<br>
+Channel Type<br>
+Physical Channel Name<br>
+Description<br>
+Analog Input:Maximum Value<br>
+Analog Input:Minimum Value<br>
+Analog Input:Custom Scale Name<br>
+Analog Input:Measurement Type<br>
+Analog Input:Voltage:Units<br>
+Analog Input:Temperature:Units<br>
+Analog Input:Temperature:Thermocouple:Type<br>
+Analog Input:Temperature:Thermocouple:CJC Source<br>
+Analog Input:Temperature:Thermocouple:CJC Value<br>
+Analog Input:Temperature:Thermocouple:CJC Channel<br>
+Analog Input:Current:Units<br>
+Analog Input:Strain:Units<br>
+Analog Input:Strain:Strain Gage:Gage Factor<br>
+Analog Input:Strain:Strain Gage:Poisson Ratio<br>
+Analog Input:Strain:Strain Gage:Configuration<br>
+Analog Input:Resistance:Units<br>
+Analog Input:TEDS:Units<br>
+Analog Input:General Properties/Attributes:Input Configuration:Terminal Configuration<br>
+Analog Input:General Properties/Attributes:Signal Conditioning:Lead Wire Resistance<br>
+Analog Input:General Properties/Attributes:Signal Conditioning:Bridge:Configuration<br>
+Analog Input:General Properties/Attributes:Signal Conditioning:Bridge:Nominal Resistance<br>
+Analog Input:General Properties/Attributes:Signal Conditioning:Bridge:Initial Bridge Voltage<br>
+Analog Input:General Properties/Attributes:Signal Conditioning:Current Shunt Resistor:Location<br>
+Analog Input:General Properties/Attributes:Signal Conditioning:Current Shunt Resistor:Value<br>
+Analog Input:General Properties/Attributes:Signal Conditioning:Excitation:Source<br>
+Analog Input:General Properties/Attributes:Signal Conditioning:Excitation:Value<br>
+Analog Input:General Properties/Attributes:Signal Conditioning:Excitation:Advanced:Use Excitation For Scaling<br>
+Analog Input:General Properties/Attributes:Signal Conditioning:Excitation:Advanced:Actual Excitation Value<br>
+Analog Input:General Properties/Attributes:Signal Conditioning:Excitation:Advanced:Voltage or Current<br>
+Analog Input:General Properties/Attributes:Digitizer/ADC:Resolution Units<br>
+Analog Input:General Properties/Attributes:Digitizer/ADC:Resolution Value<br>
+Analog Input:General Properties/Attributes:Digitizer/ADC:Dither:Enable<br>
+Analog Input:General Properties/Attributes:Advanced:Range:High<br>
+Analog Input:General Properties/Attributes:Advanced:Range:Low<br>
+Analog Input:General Properties/Attributes:Advanced:Data Transfer and Memory:Data Transfer Mechanism<br>
+Analog Input:General Properties/Attributes:Advanced:Data Transfer and Memory:Data Transfer Request Condition<br>
+Analog Input:General Properties/Attributes:Advanced:Data Transfer and Memory:Memory Mapping for Programmed IO Enable<br>
+Analog Input:General Properties/Attributes:Advanced:Device Scaling Coefficients:Device Scaling Coefficients<br>
+Analog Output:Maximum Value<br>
+Analog Output:Minimum Value<br>
+Analog Output:Custom Scale Name<br>
+Analog Output:Output Type<br>
+Analog Output:Voltage:Units<br>
+Analog Output:General Properties/Attributes:Output Configuration:Terminal Configuration<br>
+Analog Output:General Properties/Attributes:DAC:Resolution Units<br>
+Analog Output:General Properties/Attributes:DAC:Resolution Value<br>
+Analog Output:General Properties/Attributes:DAC:Range:High<br>
+Analog Output:General Properties/Attributes:DAC:Range:Low<br>
+Analog Output:General Properties/Attributes:DAC:Reference Voltage:Connect DAC Reference to Ground<br>
+Analog Output:General Properties/Attributes:DAC:Reference Voltage:Allow Connecting DAC Reference to Ground at Runtime<br>
+Analog Output:General Properties/Attributes:DAC:Reference Voltage:Source<br>
+Analog Output:General Properties/Attributes:DAC:Reference Voltage:External Source<br>
+Analog Output:General Properties/Attributes:DAC:Reference Voltage:Value<br>
+Analog Output:General Properties/Attributes:DAC:Reglitching Enable<br>
+Analog Output:General Properties/Attributes:Advanced:Data Transfer and Memory:Use Only On Board Memory<br>
+Analog Output:General Properties/Attributes:Advanced:Data Transfer and Memory:Data Transfer Mechanism<br>
+Analog Output:General Properties/Attributes:Advanced:Data Transfer and Memory:Data Transfer Request Condition<br>
+Analog Output:General Properties/Attributes:Advanced:Data Transfer and Memory:Memory Mapping for Programmed IO Enable<br>
+Analog Output:General Properties/Attributes:Advanced:Device Scaling Coefficients:Device Scaling Coefficients<br>
+Digital Input:Invert Lines<br>
+Digital Input:Number of Lines<br>
+Digital Input:Tristate<br>
+Digital Input:General Properties/Attributes:Advanced:Data Transfer and Memory:Data Transfer Mechanism<br>
+Digital Input:General Properties/Attributes:Advanced:Data Transfer and Memory:Data Transfer Request Condition<br>
+Digital Output:Invert Lines<br>
+Digital Output:Number of Lines<br>
+Digital Output:Tristate<br>
+Digital Output:General Properties/Attributes:Advanced:Data Transfer and Memory:Use Only On Board Memory<br>
+Digital Output:General Properties/Attributes:Advanced:Data Transfer and Memory:Data Transfer Mechanism<br>
+Digital Output:General Properties/Attributes:Advanced:Data Transfer and Memory:Data Transfer Request Condition<br>
+Counter Input:Maximum Value<br>
+Counter Input:Minimum Value<br>
+Counter Input:Custom Scale Name<br>
+Counter Input:Measurement Type<br>
+Counter Input:Frequency:Units<br>
+Counter Input:Frequency:Input Terminal<br>
+Counter Input:Frequency:Starting Edge<br>
+Counter Input:Frequency:Measurement Specifications:Method<br>
+Counter Input:Frequency:Measurement Specifications:High Frequency:Measurement Time<br>
+Counter Input:Frequency:Measurement Specifications:Large Range:Divisor<br>
+Counter Input:Frequency:Digital Filter:Enable<br>
+Counter Input:Frequency:Digital Filter:Minimum Pulse Width<br>
+Counter Input:Frequency:Digital Filter:Timebase:Source<br>
+Counter Input:Frequency:Digital Filter:Timebase:Rate<br>
+Counter Input:Frequency:Digital Synchronization:Enable<br>
+Counter Input:Period:Units<br>
+Counter Input:Period:Input Terminal<br>
+Counter Input:Period:Starting Edge<br>
+Counter Input:Period:Measurement Specifications:Method<br>
+Counter Input:Period:Measurement Specifications:High Frequency:Measurement Time<br>
+Counter Input:Period:Measurement Specifications:Large Range:Divisor<br>
+Counter Input:Period:Digital Filter:Enable<br>
+Counter Input:Period:Digital Filter:Minimum Pulse Width<br>
+Counter Input:Period:Digital Filter:Timebase:Source<br>
+Counter Input:Period:Digital Filter:Timebase:Rate<br>
+Counter Input:Period:Digital Synchronization:Enable<br>
+Counter Input:Count Edges:Input Terminal<br>
+Counter Input:Count Edges:Count Direction:Direction<br>
+Counter Input:Count Edges:Count Direction:Terminal<br>
+Counter Input:Count Edges:Count Direction:Digital Filter:Enable<br>
+Counter Input:Count Edges:Count Direction:Digital Filter:Minimum Pulse Width<br>
+Counter Input:Count Edges:Count Direction:Digital Filter:Timebase:Source<br>
+Counter Input:Count Edges:Count Direction:Digital Filter:Timebase:Rate<br>
+Counter Input:Count Edges:Count Direction:Digital Synchronization:Enable<br>
+Counter Input:Count Edges:Initial Count<br>
+Counter Input:Count Edges:Active Edge<br>
+Counter Input:Count Edges:Digital Filter:Enable<br>
+Counter Input:Count Edges:Digital Filter:Minimum Pulse Width<br>
+Counter Input:Count Edges:Digital Filter:Timebase:Source<br>
+Counter Input:Count Edges:Digital Filter:Timebase:Rate<br>
+Counter Input:Count Edges:Digital Synchronization:Enable<br>
+Counter Input:Position:Angular Encoder:Units<br>
+Counter Input:Position:Angular Encoder:Pulses Per Revolution<br>
+Counter Input:Position:Angular Encoder:Initial Angle<br>
+Counter Input:Position:Linear Encoder:Units<br>
+Counter Input:Position:Linear Encoder:Distance Per Pulse<br>
+Counter Input:Position:Linear Encoder:Initial Position<br>
+Counter Input:Position:Decoding Type<br>
+Counter Input:Position:A Input:Terminal<br>
+Counter Input:Position:A Input:Digital Filter:Enable<br>
+Counter Input:Position:A Input:Digital Filter:Minimum Pulse Width<br>
+Counter Input:Position:A Input:Digital Filter:Timebase:Source<br>
+Counter Input:Position:A Input:Digital Filter:Timebase:Rate<br>
+Counter Input:Position:A Input:Digital Synchronization:Enable<br>
+Counter Input:Position:B Input:Terminal<br>
+Counter Input:Position:B Input:Digital Filter:Enable<br>
+Counter Input:Position:B Input:Digital Filter:Minimum Pulse Width<br>
+Counter Input:Position:B Input:Digital Filter:Timebase:Source<br>
+Counter Input:Position:B Input:Digital Filter:Timebase:Rate<br>
+Counter Input:Position:B Input:Digital Synchronization:Enable<br>
+Counter Input:Position:Z Input:Terminal<br>
+Counter Input:Position:Z Input:Digital Filter:Enable<br>
+Counter Input:Position:Z Input:Digital Filter:Minimum Pulse Width<br>
+Counter Input:Position:Z Input:Digital Filter:Timebase:Source<br>
+Counter Input:Position:Z Input:Digital Filter:Timebase:Rate<br>
+Counter Input:Position:Z Input:Digital Synchronization:Enable<br>
+Counter Input:Position:Z Index Enable<br>
+Counter Input:Position:Z Index Value<br>
+Counter Input:Position:Z Index Phase<br>
+Counter Input:Pulse Width:Units<br>
+Counter Input:Pulse Width:Input Terminal<br>
+Counter Input:Pulse Width:Starting Edge<br>
+Counter Input:Pulse Width:Digital Filter:Enable<br>
+Counter Input:Pulse Width:Digital Filter:Minimum Pulse Width<br>
+Counter Input:Pulse Width:Digital Filter:Timebase:Source<br>
+Counter Input:Pulse Width:Digital Filter:Timebase:Rate<br>
+Counter Input:Pulse Width:Digital Synchronization:Enable<br>
+Counter Input:Two Edge Separation:Units<br>
+Counter Input:Two Edge Separation:First:Input Terminal<br>
+Counter Input:Two Edge Separation:First:Edge<br>
+Counter Input:Two Edge Separation:First:Digital Filter:Enable<br>
+Counter Input:Two Edge Separation:First:Digital Filter:Minimum Pulse Width<br>
+Counter Input:Two Edge Separation:First:Digital Filter:Timebase:Source<br>
+Counter Input:Two Edge Separation:First:Digital Filter:Timebase:Rate<br>
+Counter Input:Two Edge Separation:First:Digital Synchronization:Enable<br>
+Counter Input:Two Edge Separation:Second:Input Terminal<br>
+Counter Input:Two Edge Separation:Second:Edge<br>
+Counter Input:Two Edge Separation:Second:Digital Filter:Enable<br>
+Counter Input:Two Edge Separation:Second:Digital Filter:Minimum Pulse Width<br>
+Counter Input:Two Edge Separation:Second:Digital Filter:Timebase:Source<br>
+Counter Input:Two Edge Separation:Second:Digital Filter:Timebase:Rate<br>
+Counter Input:Two Edge Separation:Second:Digital Synchronization:Enable<br>
+Counter Input:Semi-Period:Units<br>
+Counter Input:Semi-Period:Input Terminal<br>
+Counter Input:Semi-Period:Digital Filter:Enable<br>
+Counter Input:Semi-Period:Digital Filter:Minimum Pulse Width<br>
+Counter Input:Semi-Period:Digital Filter:Timebase:Source<br>
+Counter Input:Semi-Period:Digital Filter:Timebase:Rate<br>
+Counter Input:Semi-Period:Digital Synchronization:Enable<br>
+Counter Input:General Properties/Attributes:Counter Timebase:Source<br>
+Counter Input:General Properties/Attributes:Counter Timebase:Rate<br>
+Counter Input:General Properties/Attributes:Counter Timebase:Active Edge<br>
+Counter Input:General Properties/Attributes:Counter Timebase:Digital Filter:Enable<br>
+Counter Input:General Properties/Attributes:Counter Timebase:Digital Filter:Minimum Pulse Width<br>
+Counter Input:General Properties/Attributes:Counter Timebase:Digital Filter:Timebase:Source<br>
+Counter Input:General Properties/Attributes:Counter Timebase:Digital Filter:Timebase:Rate<br>
+Counter Input:General Properties/Attributes:Counter Timebase:Digital Synchronization:Enable<br>
+Counter Input:General Properties/Attributes:More:Count<br>
+Counter Input:General Properties/Attributes:More:Output State<br>
+Counter Input:General Properties/Attributes:More:Terminal Count Reached<br>
+Counter Input:General Properties/Attributes:More:Advanced:Data Transfer and Memory:Data Transfer Mechanism<br>
+Counter Input:General Properties/Attributes:More:Advanced:Duplicate Count Prevention<br>
+Counter Input:General Properties/Attributes:More:Advanced:Prescaler<br>
+Counter Output:Output Type<br>
+Counter Output:Pulse:Idle State<br>
+Counter Output:Pulse:Output Terminal<br>
+Counter Output:Pulse:Time:Units<br>
+Counter Output:Pulse:Time:High Time<br>
+Counter Output:Pulse:Time:Low Time<br>
+Counter Output:Pulse:Time:Initial Delay<br>
+Counter Output:Pulse:Frequency:Duty Cycle<br>
+Counter Output:Pulse:Frequency:Units<br>
+Counter Output:Pulse:Frequency:Frequency<br>
+Counter Output:Pulse:Frequency:Initial Delay<br>
+Counter Output:Pulse:Ticks:High Ticks<br>
+Counter Output:Pulse:Ticks:Low Ticks<br>
+Counter Output:Pulse:Ticks:Initial Delay<br>
+Counter Output:General Properties/Attributes:Counter Timebase:Source<br>
+Counter Output:General Properties/Attributes:Counter Timebase:Rate<br>
+Counter Output:General Properties/Attributes:Counter Timebase:Active Edge<br>
+Counter Output:General Properties/Attributes:Counter Timebase:Digital Filter:Enable<br>
+Counter Output:General Properties/Attributes:Counter Timebase:Digital Filter:Minimum Pulse Width<br>
+Counter Output:General Properties/Attributes:Counter Timebase:Digital Filter:Timebase:Source<br>
+Counter Output:General Properties/Attributes:Counter Timebase:Digital Filter:Timebase:Rate<br>
+Counter Output:General Properties/Attributes:Counter Timebase:Digital Synchronization:Enable<br>
+Counter Output:General Properties/Attributes:More:Count<br>
+Counter Output:General Properties/Attributes:More:Output State<br>
+Counter Output:General Properties/Attributes:More:Auto Increment Count<br>
+Counter Output:General Properties/Attributes:More:Pulse Done<br>
+Counter Output:General Properties/Attributes:More:Advanced:Prescaler<br>
+</p>
+
+<h3>DAQmx Export Signal Properties/Attributes</h3>
+<p class="Body">
+Clocks:AI Convert Clock:Output Terminal<br>
+Clocks:Sample Clock:Output Behavior<br>
+Clocks:Sample Clock:Output Terminal<br>
+Triggers:Reference Trigger:Output Terminal<br>
+Triggers:Start Trigger:Output Terminal<br>
+Events:AI Hold Complete Event:Output Terminal<br>
+Events:AI Hold Complete Event:Pulse:Polarity<br>
+Events:Counter Output Event:Output Terminal<br>
+Events:Counter Output Event:Output Behavior<br>
+Events:Counter Output Event:Pulse:Polarity<br>
+Events:Counter Output Event:Toggle:Idle State<br>
+</p>
+
+<h3>DAQmx Read Properties/Attributes</h3>
+<p class="Body">
+RelativeTo<br>
+Offset<br>
+Channels to Read<br>
+Waveform Attributes<br>
+Read All Available Samples<br>
+Auto Start<br>
+Configure:OverWrite Mode<br>
+Status:Current Read Position<br>
+Status:Available Samples Per Channel<br>
+Status:Total Samples Per Channel Acquired<br>
+Advanced:Raw Data Width<br>
+Advanced:Number of Channels<br>
+Advanced:Digital Input:Number of Booleans Per Channel<br>
+Advanced:Wait Mode<br>
+</p>
+
+<h3>DAQmx Timing Properties/Attributes</h3>
+<p class="Body">
+Sample Quantity:Sample Mode<br>
+Sample Quantity:Samples Per Channel<br>
+Sample Timing Type<br>
+Sample Clock:Rate<br>
+Sample Clock:Source<br>
+Sample Clock:Active Edge<br>
+Sample Clock:Timebase Divisor<br>
+Sample Clock:Timebase:Rate<br>
+Sample Clock:Timebase:Source<br>
+Sample Clock:Timebase:Active Edge<br>
+Sample Clock:Digital Filter:Enable<br>
+Sample Clock:Digital Filter:Minimum Pulse Width<br>
+Sample Clock:Digital Filter:Timebase:Source<br>
+Sample Clock:Digital Filter:Timebase:Rate<br>
+Sample Clock:Digital Synchronization:Enable<br>
+On Demand:Simultaneous Analog Output Enable<br>
+More:AI Convert:Rate<br>
+More:AI Convert:Source<br>
+More:AI Convert:Active Edge<br>
+More:AI Convert:Timebase Divisor<br>
+More:AI Convert:Timebase:Source<br>
+More:Reference Clock:Rate<br>
+More:Reference Clock:Source<br>
+More:Delay From Sample Clock:Delay Units<br>
+More:Delay From Sample Clock:Delay<br>
+</p>
+
+<h3>DAQmx Trigger Properties/Attributes</h3>
+<p class="Body">
+Start:Trigger Type<br>
+Start:Digital Edge:Source<br>
+Start:Digital Edge:Edge<br>
+Start:Digital Edge:Digital Filter:Enable<br>
+Start:Digital Edge:Digital Filter:Minimum Pulse Width<br>
+Start:Digital Edge:Digital Filter:Timebase:Source<br>
+Start:Digital Edge:Digital Filter:Timebase:Rate<br>
+Start:Digital Edge:Digital Synchronization:Enable<br>
+Start:Analog Edge:Source<br>
+Start:Analog Edge:Slope<br>
+Start:Analog Edge:Level<br>
+Start:Analog Edge:Hysteresis<br>
+Start:Analog Window:Source<br>
+Start:Analog Window:Trigger When<br>
+Start:Analog Window:Top<br>
+Start:Analog Window:Bottom<br>
+Start:More:Delay<br>
+Start:More:Delay Units<br>
+Start:More:Retriggerable<br>
+Reference:Trigger Type<br>
+Reference:Pretrigger Samples per Channel<br>
+Reference:Digital Edge:Source<br>
+Reference:Digital Edge:Edge<br>
+Reference:Analog Edge:Source<br>
+Reference:Analog Edge:Slope<br>
+Reference:Analog Edge:Level<br>
+Reference:Analog Edge:Hysteresis<br>
+Reference:Analog Window:Source<br>
+Reference:Analog Window:Trigger When<br>
+Reference:Analog Window:Top<br>
+Reference:Analog Window:Bottom<br>
+More:Pause:Trigger Type<br>
+More:Pause:Analog Level:Source<br>
+More:Pause:Analog Level:Pause When<br>
+More:Pause:Analog Level:Level<br>
+More:Pause:Analog Level:Hysteresis<br>
+More:Pause:Analog Window:Source<br>
+More:Pause:Analog Window:Pause When<br>
+More:Pause:Analog Window:Top<br>
+More:Pause:Analog Window:Bottom<br>
+More:Pause:Digital Level:Source<br>
+More:Pause:Digital Level:Pause When<br>
+More:Pause:Digital Level:Digital Filter:Enable<br>
+More:Pause:Digital Level:Digital Filter:Minimum Pulse Width<br>
+More:Pause:Digital Level:Digital Filter:Timebase:Source<br>
+More:Pause:Digital Level:Digital Filter:Timebase:Rate<br>
+More:Pause:Digital Level:Digital Synchronization:Enable<br>
+More:Arm Start:Trigger Type<br>
+More:Arm Start:Digital Edge:Source<br>
+More:Arm Start:Digital Edge:Edge<br>
+More:Arm Start:Digital Edge:Digital Filter:Enable<br>
+More:Arm Start:Digital Edge:Digital Filter:Minimum Pulse Width<br>
+More:Arm Start:Digital Edge:Digital Filter:Timebase:Source<br>
+More:Arm Start:Digital Edge:Digital Filter:Timebase:Rate<br>
+More:Arm Start:Digital Edge:Digital Synchronization:Enable<br>
+</p>
+
+<h3>DAQmx Write Properties/Attributes</h3>
+<p class="Body">
+Relative To<br>
+Offset<br>
+Configure:Regeneration Mode<br>
+Status:Current Write Position<br>
+Status:Space Available in Buffer<br>
+Status:Total Samples Per Channel Generated<br>
+Advanced:Raw Data Width<br>
+Advanced:Number of Channels<br>
+Advanced:Digital Output:Number of Booleans Per Channel<br>
+</p>
+
+<h3>DAQmx Timing Source Properties/Attributes</h3>
+<p class="Body">
+Active Timing Source<br>
+Timing Source Type<br>
+Frequency:Counter<br>
+Frequency:Frequency<br>
+Digital Edge using Counter:Counter<br>
+Digital Edge using Counter:Edge<br>
+Digital Edge using Counter:Edge Count<br>
+Digital Edge using Counter:Terminal<br>
+Signal From Task:Signal<br>
+</p>
+
+<p class="Body"><a href="#apitop">Return to top</a></p>
+
+<a name="6281"></a>
+<h2>NI 6281/6289 Supported Properties/Attributes</h2>
+
+<h3>DAQmx Calibration Info Properties/Attributes</h3>
+<p class="Body">
+Active Device<br>
+Self Calibration:Is Supported<br>
+Self Calibration:Last Self Calibration Date/Time<br>
+Self Calibration:Last Self Calibration Temperature<br>
+External Calibration:Recommended Interval<br>
+External Calibration:Last External Calibration Date/Time<br>
+External Calibration:Last External Calibration Temperature<br>
+User Defined Information:Information<br>
+User Defined Information:Max Size<br>
+More:Device Temperature<br>
+</p>
+
+<h3>DAQmx Channel Properties/Attributes</h3>
+<p class="Body">
+Active Channels<br>
+Channel Type<br>
+Physical Channel Name<br>
+Description<br>
+Analog Input:Maximum Value<br>
+Analog Input:Minimum Value<br>
+Analog Input:Custom Scale Name<br>
+Analog Input:Measurement Type<br>
+Analog Input:Voltage:Units<br>
+Analog Input:Temperature:Units<br>
+Analog Input:Temperature:Thermocouple:Type<br>
+Analog Input:Temperature:Thermocouple:CJC Source<br>
+Analog Input:Temperature:Thermocouple:CJC Value<br>
+Analog Input:Temperature:Thermocouple:CJC Channel<br>
+Analog Input:Current:Units<br>
+Analog Input:Strain:Units<br>
+Analog Input:Strain:Strain Gage:Gage Factor<br>
+Analog Input:Strain:Strain Gage:Poisson Ratio<br>
+Analog Input:Strain:Strain Gage:Configuration<br>
+Analog Input:Resistance:Units<br>
+Analog Input:TEDS:Units<br>
+Analog Input:General Properties/Attributes:Input Configuration:Terminal Configuration<br>
+Analog Input:General Properties/Attributes:Signal Conditioning:Lead Wire Resistance<br>
+Analog Input:General Properties/Attributes:Signal Conditioning:Bridge:Configuration<br>
+Analog Input:General Properties/Attributes:Signal Conditioning:Bridge:Nominal Resistance<br>
+Analog Input:General Properties/Attributes:Signal Conditioning:Bridge:Initial Bridge Voltage<br>
+Analog Input:General Properties/Attributes:Signal Conditioning:Current Shunt Resistor:Location<br>
+Analog Input:General Properties/Attributes:Signal Conditioning:Current Shunt Resistor:Value<br>
+Analog Input:General Properties/Attributes:Signal Conditioning:Excitation:Source<br>
+Analog Input:General Properties/Attributes:Signal Conditioning:Excitation:Value<br>
+Analog Input:General Properties/Attributes:Signal Conditioning:Excitation:Advanced:Use Excitation For Scaling<br>
+Analog Input:General Properties/Attributes:Signal Conditioning:Excitation:Advanced:Actual Excitation Value<br>
+Analog Input:General Properties/Attributes:Signal Conditioning:Excitation:Advanced:Voltage or Current<br>
+Analog Input:General Properties/Attributes:Filter:Analog Lowpass:Enable<br>
+Analog Input:General Properties/Attributes:Filter:Analog Lowpass:Cutoff Frequency<br>
+Analog Input:General Properties/Attributes:Digitizer/ADC:Resolution Units<br>
+Analog Input:General Properties/Attributes:Digitizer/ADC:Resolution Value<br>
+Analog Input:General Properties/Attributes:Digitizer/ADC:Dither:Enable<br>
+Analog Input:General Properties/Attributes:Advanced:Range:High<br>
+Analog Input:General Properties/Attributes:Advanced:Range:Low<br>
+Analog Input:General Properties/Attributes:Advanced:Data Transfer and Memory:Data Transfer Mechanism<br>
+Analog Input:General Properties/Attributes:Advanced:Data Transfer and Memory:Data Transfer Request Condition<br>
+Analog Input:General Properties/Attributes:Advanced:Data Transfer and Memory:Memory Mapping for Programmed IO Enable<br>
+Analog Input:General Properties/Attributes:Advanced:Device Scaling Coefficients:Device Scaling Coefficients<br>
+Analog Output:Maximum Value<br>
+Analog Output:Minimum Value<br>
+Analog Output:Custom Scale Name<br>
+Analog Output:Output Type<br>
+Analog Output:Voltage:Units<br>
+Analog Output:General Properties/Attributes:Output Configuration:Terminal Configuration<br>
+Analog Output:General Properties/Attributes:DAC:Resolution Units<br>
+Analog Output:General Properties/Attributes:DAC:Resolution Value<br>
+Analog Output:General Properties/Attributes:DAC:Range:High<br>
+Analog Output:General Properties/Attributes:DAC:Range:Low<br>
+Analog Output:General Properties/Attributes:DAC:Reference Voltage:Connect DAC Reference to Ground<br>
+Analog Output:General Properties/Attributes:DAC:Reference Voltage:Allow Connecting DAC Reference to Ground at Runtime<br>
+Analog Output:General Properties/Attributes:DAC:Reference Voltage:Source<br>
+Analog Output:General Properties/Attributes:DAC:Reference Voltage:External Source<br>
+Analog Output:General Properties/Attributes:DAC:Reference Voltage:Value<br>
+Analog Output:General Properties/Attributes:DAC:Offset Voltage:Source<br>
+Analog Output:General Properties/Attributes:DAC:Offset Voltage:External Source<br>
+Analog Output:General Properties/Attributes:DAC:Offset Voltage:Value<br>
+Analog Output:General Properties/Attributes:DAC:Reglitching Enable<br>
+Analog Output:General Properties/Attributes:Advanced:Data Transfer and Memory:Use Only On Board Memory<br>
+Analog Output:General Properties/Attributes:Advanced:Data Transfer and Memory:Data Transfer Mechanism<br>
+Analog Output:General Properties/Attributes:Advanced:Data Transfer and Memory:Data Transfer Request Condition<br>
+Analog Output:General Properties/Attributes:Advanced:Data Transfer and Memory:Memory Mapping for Programmed IO Enable<br>
+Analog Output:General Properties/Attributes:Advanced:Device Scaling Coefficients:Device Scaling Coefficients<br>
+Digital Input:Invert Lines<br>
+Digital Input:Number of Lines<br>
+Digital Input:Tristate<br>
+Digital Input:General Properties/Attributes:Advanced:Data Transfer and Memory:Data Transfer Mechanism<br>
+Digital Input:General Properties/Attributes:Advanced:Data Transfer and Memory:Data Transfer Request Condition<br>
+Digital Output:Invert Lines<br>
+Digital Output:Number of Lines<br>
+Digital Output:Tristate<br>
+Digital Output:General Properties/Attributes:Advanced:Data Transfer and Memory:Use Only On Board Memory<br>
+Digital Output:General Properties/Attributes:Advanced:Data Transfer and Memory:Data Transfer Mechanism<br>
+Digital Output:General Properties/Attributes:Advanced:Data Transfer and Memory:Data Transfer Request Condition<br>
+Counter Input:Maximum Value<br>
+Counter Input:Minimum Value<br>
+Counter Input:Custom Scale Name<br>
+Counter Input:Measurement Type<br>
+Counter Input:Frequency:Units<br>
+Counter Input:Frequency:Input Terminal<br>
+Counter Input:Frequency:Starting Edge<br>
+Counter Input:Frequency:Measurement Specifications:Method<br>
+Counter Input:Frequency:Measurement Specifications:High Frequency:Measurement Time<br>
+Counter Input:Frequency:Measurement Specifications:Large Range:Divisor<br>
+Counter Input:Frequency:Digital Filter:Enable<br>
+Counter Input:Frequency:Digital Filter:Minimum Pulse Width<br>
+Counter Input:Frequency:Digital Filter:Timebase:Source<br>
+Counter Input:Frequency:Digital Filter:Timebase:Rate<br>
+Counter Input:Frequency:Digital Synchronization:Enable<br>
+Counter Input:Period:Units<br>
+Counter Input:Period:Input Terminal<br>
+Counter Input:Period:Starting Edge<br>
+Counter Input:Period:Measurement Specifications:Method<br>
+Counter Input:Period:Measurement Specifications:High Frequency:Measurement Time<br>
+Counter Input:Period:Measurement Specifications:Large Range:Divisor<br>
+Counter Input:Period:Digital Filter:Enable<br>
+Counter Input:Period:Digital Filter:Minimum Pulse Width<br>
+Counter Input:Period:Digital Filter:Timebase:Source<br>
+Counter Input:Period:Digital Filter:Timebase:Rate<br>
+Counter Input:Period:Digital Synchronization:Enable<br>
+Counter Input:Count Edges:Input Terminal<br>
+Counter Input:Count Edges:Count Direction:Direction<br>
+Counter Input:Count Edges:Count Direction:Terminal<br>
+Counter Input:Count Edges:Count Direction:Digital Filter:Enable<br>
+Counter Input:Count Edges:Count Direction:Digital Filter:Minimum Pulse Width<br>
+Counter Input:Count Edges:Count Direction:Digital Filter:Timebase:Source<br>
+Counter Input:Count Edges:Count Direction:Digital Filter:Timebase:Rate<br>
+Counter Input:Count Edges:Count Direction:Digital Synchronization:Enable<br>
+Counter Input:Count Edges:Initial Count<br>
+Counter Input:Count Edges:Active Edge<br>
+Counter Input:Count Edges:Digital Filter:Enable<br>
+Counter Input:Count Edges:Digital Filter:Minimum Pulse Width<br>
+Counter Input:Count Edges:Digital Filter:Timebase:Source<br>
+Counter Input:Count Edges:Digital Filter:Timebase:Rate<br>
+Counter Input:Count Edges:Digital Synchronization:Enable<br>
+Counter Input:Position:Angular Encoder:Units<br>
+Counter Input:Position:Angular Encoder:Pulses Per Revolution<br>
+Counter Input:Position:Angular Encoder:Initial Angle<br>
+Counter Input:Position:Linear Encoder:Units<br>
+Counter Input:Position:Linear Encoder:Distance Per Pulse<br>
+Counter Input:Position:Linear Encoder:Initial Position<br>
+Counter Input:Position:Decoding Type<br>
+Counter Input:Position:A Input:Terminal<br>
+Counter Input:Position:A Input:Digital Filter:Enable<br>
+Counter Input:Position:A Input:Digital Filter:Minimum Pulse Width<br>
+Counter Input:Position:A Input:Digital Filter:Timebase:Source<br>
+Counter Input:Position:A Input:Digital Filter:Timebase:Rate<br>
+Counter Input:Position:A Input:Digital Synchronization:Enable<br>
+Counter Input:Position:B Input:Terminal<br>
+Counter Input:Position:B Input:Digital Filter:Enable<br>
+Counter Input:Position:B Input:Digital Filter:Minimum Pulse Width<br>
+Counter Input:Position:B Input:Digital Filter:Timebase:Source<br>
+Counter Input:Position:B Input:Digital Filter:Timebase:Rate<br>
+Counter Input:Position:B Input:Digital Synchronization:Enable<br>
+Counter Input:Position:Z Input:Terminal<br>
+Counter Input:Position:Z Input:Digital Filter:Enable<br>
+Counter Input:Position:Z Input:Digital Filter:Minimum Pulse Width<br>
+Counter Input:Position:Z Input:Digital Filter:Timebase:Source<br>
+Counter Input:Position:Z Input:Digital Filter:Timebase:Rate<br>
+Counter Input:Position:Z Input:Digital Synchronization:Enable<br>
+Counter Input:Position:Z Index Enable<br>
+Counter Input:Position:Z Index Value<br>
+Counter Input:Position:Z Index Phase<br>
+Counter Input:Pulse Width:Units<br>
+Counter Input:Pulse Width:Input Terminal<br>
+Counter Input:Pulse Width:Starting Edge<br>
+Counter Input:Pulse Width:Digital Filter:Enable<br>
+Counter Input:Pulse Width:Digital Filter:Minimum Pulse Width<br>
+Counter Input:Pulse Width:Digital Filter:Timebase:Source<br>
+Counter Input:Pulse Width:Digital Filter:Timebase:Rate<br>
+Counter Input:Pulse Width:Digital Synchronization:Enable<br>
+Counter Input:Two Edge Separation:Units<br>
+Counter Input:Two Edge Separation:First:Input Terminal<br>
+Counter Input:Two Edge Separation:First:Edge<br>
+Counter Input:Two Edge Separation:First:Digital Filter:Enable<br>
+Counter Input:Two Edge Separation:First:Digital Filter:Minimum Pulse Width<br>
+Counter Input:Two Edge Separation:First:Digital Filter:Timebase:Source<br>
+Counter Input:Two Edge Separation:First:Digital Filter:Timebase:Rate<br>
+Counter Input:Two Edge Separation:First:Digital Synchronization:Enable<br>
+Counter Input:Two Edge Separation:Second:Input Terminal<br>
+Counter Input:Two Edge Separation:Second:Edge<br>
+Counter Input:Two Edge Separation:Second:Digital Filter:Enable<br>
+Counter Input:Two Edge Separation:Second:Digital Filter:Minimum Pulse Width<br>
+Counter Input:Two Edge Separation:Second:Digital Filter:Timebase:Source<br>
+Counter Input:Two Edge Separation:Second:Digital Filter:Timebase:Rate<br>
+Counter Input:Two Edge Separation:Second:Digital Synchronization:Enable<br>
+Counter Input:Semi-Period:Units<br>
+Counter Input:Semi-Period:Input Terminal<br>
+Counter Input:Semi-Period:Digital Filter:Enable<br>
+Counter Input:Semi-Period:Digital Filter:Minimum Pulse Width<br>
+Counter Input:Semi-Period:Digital Filter:Timebase:Source<br>
+Counter Input:Semi-Period:Digital Filter:Timebase:Rate<br>
+Counter Input:Semi-Period:Digital Synchronization:Enable<br>
+Counter Input:General Properties/Attributes:Counter Timebase:Source<br>
+Counter Input:General Properties/Attributes:Counter Timebase:Rate<br>
+Counter Input:General Properties/Attributes:Counter Timebase:Active Edge<br>
+Counter Input:General Properties/Attributes:Counter Timebase:Digital Filter:Enable<br>
+Counter Input:General Properties/Attributes:Counter Timebase:Digital Filter:Minimum Pulse Width<br>
+Counter Input:General Properties/Attributes:Counter Timebase:Digital Filter:Timebase:Source<br>
+Counter Input:General Properties/Attributes:Counter Timebase:Digital Filter:Timebase:Rate<br>
+Counter Input:General Properties/Attributes:Counter Timebase:Digital Synchronization:Enable<br>
+Counter Input:General Properties/Attributes:More:Count<br>
+Counter Input:General Properties/Attributes:More:Output State<br>
+Counter Input:General Properties/Attributes:More:Terminal Count Reached<br>
+Counter Input:General Properties/Attributes:More:Advanced:Data Transfer and Memory:Data Transfer Mechanism<br>
+Counter Input:General Properties/Attributes:More:Advanced:Duplicate Count Prevention<br>
+Counter Input:General Properties/Attributes:More:Advanced:Prescaler<br>
+Counter Output:Output Type<br>
+Counter Output:Pulse:Idle State<br>
+Counter Output:Pulse:Output Terminal<br>
+Counter Output:Pulse:Time:Units<br>
+Counter Output:Pulse:Time:High Time<br>
+Counter Output:Pulse:Time:Low Time<br>
+Counter Output:Pulse:Time:Initial Delay<br>
+Counter Output:Pulse:Frequency:Duty Cycle<br>
+Counter Output:Pulse:Frequency:Units<br>
+Counter Output:Pulse:Frequency:Frequency<br>
+Counter Output:Pulse:Frequency:Initial Delay<br>
+Counter Output:Pulse:Ticks:High Ticks<br>
+Counter Output:Pulse:Ticks:Low Ticks<br>
+Counter Output:Pulse:Ticks:Initial Delay<br>
+Counter Output:General Properties/Attributes:Counter Timebase:Source<br>
+Counter Output:General Properties/Attributes:Counter Timebase:Rate<br>
+Counter Output:General Properties/Attributes:Counter Timebase:Active Edge<br>
+Counter Output:General Properties/Attributes:Counter Timebase:Digital Filter:Enable<br>
+Counter Output:General Properties/Attributes:Counter Timebase:Digital Filter:Minimum Pulse Width<br>
+Counter Output:General Properties/Attributes:Counter Timebase:Digital Filter:Timebase:Source<br>
+Counter Output:General Properties/Attributes:Counter Timebase:Digital Filter:Timebase:Rate<br>
+Counter Output:General Properties/Attributes:Counter Timebase:Digital Synchronization:Enable<br>
+Counter Output:General Properties/Attributes:More:Count<br>
+Counter Output:General Properties/Attributes:More:Output State<br>
+Counter Output:General Properties/Attributes:More:Auto Increment Count<br>
+Counter Output:General Properties/Attributes:More:Pulse Done<br>
+Counter Output:General Properties/Attributes:More:Advanced:Prescaler<br>
+</p>
+
+<h3>DAQmx Export Signal Properties/Attributes</h3>
+<p class="Body">
+Clocks:AI Convert Clock:Output Terminal<br>
+Clocks:Sample Clock:Output Behavior<br>
+Clocks:Sample Clock:Output Terminal<br>
+Triggers:Reference Trigger:Output Terminal<br>
+Triggers:Start Trigger:Output Terminal<br>
+Events:AI Hold Complete Event:Output Terminal<br>
+Events:AI Hold Complete Event:Pulse:Polarity<br>
+Events:Counter Output Event:Output Terminal<br>
+Events:Counter Output Event:Output Behavior<br>
+Events:Counter Output Event:Pulse:Polarity<br>
+Events:Counter Output Event:Toggle:Idle State<br>
+</p>
+
+<h3>DAQmx Read Properties/Attributes</h3>
+<p class="Body">
+RelativeTo<br>
+Offset<br>
+Channels to Read<br>
+Waveform Attributes<br>
+Read All Available Samples<br>
+Auto Start<br>
+Configure:OverWrite Mode<br>
+Status:Current Read Position<br>
+Status:Available Samples Per Channel<br>
+Status:Total Samples Per Channel Acquired<br>
+Advanced:Raw Data Width<br>
+Advanced:Number of Channels<br>
+Advanced:Digital Input:Number of Booleans Per Channel<br>
+Advanced:Wait Mode<br>
+</p>
+
+<h3>DAQmx Timing Properties/Attributes</h3>
+<p class="Body">
+Sample Quantity:Sample Mode<br>
+Sample Quantity:Samples Per Channel<br>
+Sample Timing Type<br>
+Sample Clock:Rate<br>
+Sample Clock:Source<br>
+Sample Clock:Active Edge<br>
+Sample Clock:Timebase Divisor<br>
+Sample Clock:Timebase:Rate<br>
+Sample Clock:Timebase:Source<br>
+Sample Clock:Timebase:Active Edge<br>
+Sample Clock:Digital Filter:Enable<br>
+Sample Clock:Digital Filter:Minimum Pulse Width<br>
+Sample Clock:Digital Filter:Timebase:Source<br>
+Sample Clock:Digital Filter:Timebase:Rate<br>
+Sample Clock:Digital Synchronization:Enable<br>
+On Demand:Simultaneous Analog Output Enable<br>
+More:AI Convert:Rate<br>
+More:AI Convert:Source<br>
+More:AI Convert:Active Edge<br>
+More:AI Convert:Timebase Divisor<br>
+More:AI Convert:Timebase:Source<br>
+More:Reference Clock:Rate<br>
+More:Reference Clock:Source<br>
+More:Delay From Sample Clock:Delay Units<br>
+More:Delay From Sample Clock:Delay<br>
+</p>
+
+<h3>DAQmx Trigger Properties/Attributes</h3>
+<p class="Body">
+Start:Trigger Type<br>
+Start:Digital Edge:Source<br>
+Start:Digital Edge:Edge<br>
+Start:Digital Edge:Digital Filter:Enable<br>
+Start:Digital Edge:Digital Filter:Minimum Pulse Width<br>
+Start:Digital Edge:Digital Filter:Timebase:Source<br>
+Start:Digital Edge:Digital Filter:Timebase:Rate<br>
+Start:Digital Edge:Digital Synchronization:Enable<br>
+Start:Analog Edge:Source<br>
+Start:Analog Edge:Slope<br>
+Start:Analog Edge:Level<br>
+Start:Analog Edge:Hysteresis<br>
+Start:Analog Window:Source<br>
+Start:Analog Window:Trigger When<br>
+Start:Analog Window:Top<br>
+Start:Analog Window:Bottom<br>
+Start:More:Delay<br>
+Start:More:Delay Units<br>
+Start:More:Retriggerable<br>
+Reference:Trigger Type<br>
+Reference:Pretrigger Samples per Channel<br>
+Reference:Digital Edge:Source<br>
+Reference:Digital Edge:Edge<br>
+Reference:Analog Edge:Source<br>
+Reference:Analog Edge:Slope<br>
+Reference:Analog Edge:Level<br>
+Reference:Analog Edge:Hysteresis<br>
+Reference:Analog Window:Source<br>
+Reference:Analog Window:Trigger When<br>
+Reference:Analog Window:Top<br>
+Reference:Analog Window:Bottom<br>
+More:Pause:Trigger Type<br>
+More:Pause:Analog Level:Source<br>
+More:Pause:Analog Level:Pause When<br>
+More:Pause:Analog Level:Level<br>
+More:Pause:Analog Level:Hysteresis<br>
+More:Pause:Analog Window:Source<br>
+More:Pause:Analog Window:Pause When<br>
+More:Pause:Analog Window:Top<br>
+More:Pause:Analog Window:Bottom<br>
+More:Pause:Digital Level:Source<br>
+More:Pause:Digital Level:Pause When<br>
+More:Pause:Digital Level:Digital Filter:Enable<br>
+More:Pause:Digital Level:Digital Filter:Minimum Pulse Width<br>
+More:Pause:Digital Level:Digital Filter:Timebase:Source<br>
+More:Pause:Digital Level:Digital Filter:Timebase:Rate<br>
+More:Pause:Digital Level:Digital Synchronization:Enable<br>
+More:Arm Start:Trigger Type<br>
+More:Arm Start:Digital Edge:Source<br>
+More:Arm Start:Digital Edge:Edge<br>
+More:Arm Start:Digital Edge:Digital Filter:Enable<br>
+More:Arm Start:Digital Edge:Digital Filter:Minimum Pulse Width<br>
+More:Arm Start:Digital Edge:Digital Filter:Timebase:Source<br>
+More:Arm Start:Digital Edge:Digital Filter:Timebase:Rate<br>
+More:Arm Start:Digital Edge:Digital Synchronization:Enable<br>
+</p>
+
+<h3>DAQmx Write Properties/Attributes</h3>
+<p class="Body">
+Relative To<br>
+Offset<br>
+Configure:Regeneration Mode<br>
+Status:Current Write Position<br>
+Status:Space Available in Buffer<br>
+Status:Total Samples Per Channel Generated<br>
+Advanced:Raw Data Width<br>
+Advanced:Number of Channels<br>
+Advanced:Digital Output:Number of Booleans Per Channel<br>
+</p>
+
+<h3>DAQmx Timing Source Properties/Attributes</h3>
+<p class="Body">
+Active Timing Source<br>
+Timing Source Type<br>
+Frequency:Counter<br>
+Frequency:Frequency<br>
+Digital Edge using Counter:Counter<br>
+Digital Edge using Counter:Edge<br>
+Digital Edge using Counter:Edge Count<br>
+Digital Edge using Counter:Terminal<br>
+Signal From Task:Signal<br>
+</p>
+
+<p class="Body"><a href="#apitop">Return to top</a></p>
+
+
+
+
+
+
+
+</body>
+</html>
